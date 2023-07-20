@@ -44,3 +44,5 @@ class inventory(models.Model):
     stock_available = models.BigIntegerField()
     a_s_value = models.DecimalField(max_digits=5, decimal_places=2)
     best_selling_product = models.CharField(max_length=255)
+
+#TODO : refactor the model before migration
