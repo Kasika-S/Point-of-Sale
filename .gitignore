@@ -1,3 +1,4 @@
 Pipfile
 Pipfile.lock
 __Flutter_Output__
+.mypy_cache/
