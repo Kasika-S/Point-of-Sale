@@ -20,7 +20,7 @@ class Item(models.Model):
 class Purchase(models.Model):
     purchase_order = models.CharField(max_length=100,primary_key=True)
     purchase_date = models.DateField(auto_now_add=True)
-    sku = models.ManytoOneField(Item,on_delete=models.CASCADE)
+    sku = models.ForeignKey(Item,on_delete=models.CASCADE)
     supplier = models.CharField(max_length=255)
     quantity = models.BigIntegerField()
     discount = models.FloatField()
@@ -44,5 +44,5 @@ class Sale(models.Model):
     unit_price = models.DecimalField(max_digits=5, decimal_places=2)
     total_amount = models.DecimalField(max_digits=5, decimal_places=2)
     customer_id = models.ForeignKey(User,on_delete=models.CASCADE)
-    purchase_id = models.ManytoMaybeField(Purchase,on_delete=models.CASCADE)
+    purchase_id = models.ForeignKey(Purchase,on_delete=models.CASCADE)
 
