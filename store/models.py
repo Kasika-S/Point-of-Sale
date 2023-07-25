@@ -13,7 +13,7 @@ class User(models.Model):
 
 class Purchase(models.Model):
     sku = models.CharField(max_length=100, primary_key=True)
-    purchase_order = models.CharField(max_length=100,primary_key=True)
+    purchase_order = models.CharField(max_length=100)
     purchase_date = models.DateField(auto_now_add=True)
     supplier = models.CharField(max_length=255)
     quantity = models.BigIntegerField()
@@ -38,11 +38,11 @@ class inventory(models.Model):
 class Sale(models.Model):
     sale_order = models.CharField(max_length=100,primary_key=True)
     sale_date = models.DateField(auto_now_add=True)
-    sku = models.ForeignKey(,on_delete=models.CASCADE)
+    sku = models.ForeignKey(Purchase,on_delete=models.CASCADE)
     quantity = models.BigIntegerField()
     discount = models.FloatField()
     unit_price = models.DecimalField(max_digits=5, decimal_places=2)
     total_amount = models.DecimalField(max_digits=5, decimal_places=2)
     customer_id = models.ForeignKey(User,on_delete=models.CASCADE)
-    purchase_id = models.ForeignKey(Purchase,on_delete=models.CASCADE)
+    #purchase_id = models.ForeignKey(Purchase,on_delete=models.CASCADE)
 
