@@ -3,5 +3,11 @@ from . import views
 
 #URLConfig
 urlpatterns = [
-    path('dashboard/', views.store_dashboard, name='dashboard'),
+    path('main/', views.store_main, name='main'),
+    path("dashboard/", views.store_main, name='dashboard'),
+    path("users/", views.users, name='users'),
+    path("purchases/", views.purchases, name='purchases'),
+    path("sales/", views.sales, name='sales'),
+    path("inventory/", views.inventory, name='inventory'),
+    path("reports/", views.reports, name='reports'),
 ]
