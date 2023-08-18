@@ -850,7 +850,7 @@ p {
 .card {
   border-radius: 0.25rem;
   --bg-opacity: 1;
-  background-color: #fff;
+  background-color: #f3f3f3;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
   border-width: 1px;
   --border-opacity: 1;
@@ -885,7 +885,7 @@ p {
   padding-right: 1.25rem;
   border-radius: 0.25rem;
   --text-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--text-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1039,7 +1039,7 @@ p {
 
 .btn-gray:hover {
   --bg-opacity: 1;
-  background-color: #fff;
+  background-color: #f3f3f3;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
   --text-opacity: 1;
   color: #2d3748;
@@ -1057,7 +1057,7 @@ p {
   background-color: #1a202c;
   background-color: rgba(26, 32, 44, var(--bg-opacity));
   --text-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--text-opacity));
   display: block;
   padding-top: 0.5rem;
@@ -1081,7 +1081,7 @@ p {
   background-color: #5a67d8;
   background-color: rgba(90, 103, 216, var(--bg-opacity));
   --text-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--text-opacity));
   display: block;
   padding-top: 0.5rem;
@@ -1105,7 +1105,7 @@ p {
   background-color: #a0aec0;
   background-color: rgba(160, 174, 192, var(--bg-opacity));
   --text-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--text-opacity));
   display: block;
   padding-top: 0.5rem;
@@ -1129,7 +1129,7 @@ p {
   background-color: #48bb78;
   background-color: rgba(72, 187, 120, var(--bg-opacity));
   --text-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--text-opacity));
   display: block;
   padding-top: 0.5rem;
@@ -1153,7 +1153,7 @@ p {
   background-color: #f56565;
   background-color: rgba(245, 101, 101, var(--bg-opacity));
   --text-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--text-opacity));
   display: block;
   padding-top: 0.5rem;
@@ -1177,7 +1177,7 @@ p {
   background-color: #ecc94b;
   background-color: rgba(236, 201, 75, var(--bg-opacity));
   --text-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--text-opacity));
   display: block;
   padding-top: 0.5rem;
@@ -1219,7 +1219,7 @@ div.code-toolbar .toolbar button {
 }
 
 div.code-toolbar .toolbar button:hover {
-  background-color: #fff !important;
+  background-color: #f3f3f3 !important;
 }
 
 .badge {
@@ -1247,7 +1247,7 @@ div.code-toolbar .toolbar button:hover {
   border-width: 1px;
   border-radius: 0.25rem;
   --bg-opacity: 1;
-  background-color: #fff;
+  background-color: #f3f3f3;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1315,7 +1315,7 @@ div.code-toolbar .toolbar button:hover {
   border-color: #1a202c;
   border-color: rgba(26, 32, 44, var(--border-opacity));
   --text-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--text-opacity))
 }
 
@@ -1383,7 +1383,7 @@ div.code-toolbar .toolbar button:hover {
 .report-card:hover .card {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --border-opacity: 1;
-  border-color: #fff;
+  border-color: #f3f3f3;
   border-color: rgba(255, 255, 255, var(--border-opacity));  transform: scale(1.01);
 }
 
@@ -2006,7 +2006,7 @@ div.code-toolbar .toolbar button:hover {
 
 .divide-white > :not(template) ~ :not(template){
   --divide-opacity: 1;
-  border-color: #fff;
+  border-color: #f3f3f3;
   border-color: rgba(255, 255, 255, var(--divide-opacity));
 }
 
@@ -2066,7 +2066,7 @@ div.code-toolbar .toolbar button:hover {
 
 .divide-red-100 > :not(template) ~ :not(template){
   --divide-opacity: 1;
-  border-color: #fff5f5;
+  border-color: #f3f3f35f5;
   border-color: rgba(255, 245, 245, var(--divide-opacity));
 }
 
@@ -2120,7 +2120,7 @@ div.code-toolbar .toolbar button:hover {
 
 .divide-orange-100 > :not(template) ~ :not(template){
   --divide-opacity: 1;
-  border-color: #fffaf0;
+  border-color: #f3f3f3af0;
   border-color: rgba(255, 250, 240, var(--divide-opacity));
 }
 
@@ -2174,7 +2174,7 @@ div.code-toolbar .toolbar button:hover {
 
 .divide-yellow-100 > :not(template) ~ :not(template){
   --divide-opacity: 1;
-  border-color: #fffff0;
+  border-color: #f3f3f3ff0;
   border-color: rgba(255, 255, 240, var(--divide-opacity));
 }
 
@@ -2498,7 +2498,7 @@ div.code-toolbar .toolbar button:hover {
 
 .divide-pink-100 > :not(template) ~ :not(template){
   --divide-opacity: 1;
-  border-color: #fff5f7;
+  border-color: #f3f3f35f7;
   border-color: rgba(255, 245, 247, var(--divide-opacity));
 }
 
@@ -2650,7 +2650,7 @@ div.code-toolbar .toolbar button:hover {
 
 .bg-white{
   --bg-opacity: 1;
-  background-color: #fff;
+  background-color: #f3f3f3;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
 }
 
@@ -2710,7 +2710,7 @@ div.code-toolbar .toolbar button:hover {
 
 .bg-red-100{
   --bg-opacity: 1;
-  background-color: #fff5f5;
+  background-color: #f3f3f35f5;
   background-color: rgba(255, 245, 245, var(--bg-opacity));
 }
 
@@ -2764,7 +2764,7 @@ div.code-toolbar .toolbar button:hover {
 
 .bg-orange-100{
   --bg-opacity: 1;
-  background-color: #fffaf0;
+  background-color: #f3f3f3af0;
   background-color: rgba(255, 250, 240, var(--bg-opacity));
 }
 
@@ -2818,7 +2818,7 @@ div.code-toolbar .toolbar button:hover {
 
 .bg-yellow-100{
   --bg-opacity: 1;
-  background-color: #fffff0;
+  background-color: #f3f3f3ff0;
   background-color: rgba(255, 255, 240, var(--bg-opacity));
 }
 
@@ -3142,7 +3142,7 @@ div.code-toolbar .toolbar button:hover {
 
 .bg-pink-100{
   --bg-opacity: 1;
-  background-color: #fff5f7;
+  background-color: #f3f3f35f7;
   background-color: rgba(255, 245, 247, var(--bg-opacity));
 }
 
@@ -3210,7 +3210,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:bg-white:hover{
   --bg-opacity: 1;
-  background-color: #fff;
+  background-color: #f3f3f3;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
 }
 
@@ -3270,7 +3270,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:bg-red-100:hover{
   --bg-opacity: 1;
-  background-color: #fff5f5;
+  background-color: #f3f3f35f5;
   background-color: rgba(255, 245, 245, var(--bg-opacity));
 }
 
@@ -3324,7 +3324,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:bg-orange-100:hover{
   --bg-opacity: 1;
-  background-color: #fffaf0;
+  background-color: #f3f3f3af0;
   background-color: rgba(255, 250, 240, var(--bg-opacity));
 }
 
@@ -3378,7 +3378,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:bg-yellow-100:hover{
   --bg-opacity: 1;
-  background-color: #fffff0;
+  background-color: #f3f3f3ff0;
   background-color: rgba(255, 255, 240, var(--bg-opacity));
 }
 
@@ -3702,7 +3702,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:bg-pink-100:hover{
   --bg-opacity: 1;
-  background-color: #fff5f7;
+  background-color: #f3f3f35f7;
   background-color: rgba(255, 245, 247, var(--bg-opacity));
 }
 
@@ -3770,7 +3770,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:bg-white:focus{
   --bg-opacity: 1;
-  background-color: #fff;
+  background-color: #f3f3f3;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
 }
 
@@ -3830,7 +3830,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:bg-red-100:focus{
   --bg-opacity: 1;
-  background-color: #fff5f5;
+  background-color: #f3f3f35f5;
   background-color: rgba(255, 245, 245, var(--bg-opacity));
 }
 
@@ -3884,7 +3884,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:bg-orange-100:focus{
   --bg-opacity: 1;
-  background-color: #fffaf0;
+  background-color: #f3f3f3af0;
   background-color: rgba(255, 250, 240, var(--bg-opacity));
 }
 
@@ -3938,7 +3938,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:bg-yellow-100:focus{
   --bg-opacity: 1;
-  background-color: #fffff0;
+  background-color: #f3f3f3ff0;
   background-color: rgba(255, 255, 240, var(--bg-opacity));
 }
 
@@ -4262,7 +4262,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:bg-pink-100:focus{
   --bg-opacity: 1;
-  background-color: #fff5f7;
+  background-color: #f3f3f35f7;
   background-color: rgba(255, 245, 247, var(--bg-opacity));
 }
 
@@ -4470,7 +4470,7 @@ div.code-toolbar .toolbar button:hover {
 
 .border-white{
   --border-opacity: 1;
-  border-color: #fff;
+  border-color: #f3f3f3;
   border-color: rgba(255, 255, 255, var(--border-opacity));
 }
 
@@ -4530,7 +4530,7 @@ div.code-toolbar .toolbar button:hover {
 
 .border-red-100{
   --border-opacity: 1;
-  border-color: #fff5f5;
+  border-color: #f3f3f35f5;
   border-color: rgba(255, 245, 245, var(--border-opacity));
 }
 
@@ -4584,7 +4584,7 @@ div.code-toolbar .toolbar button:hover {
 
 .border-orange-100{
   --border-opacity: 1;
-  border-color: #fffaf0;
+  border-color: #f3f3f3af0;
   border-color: rgba(255, 250, 240, var(--border-opacity));
 }
 
@@ -4638,7 +4638,7 @@ div.code-toolbar .toolbar button:hover {
 
 .border-yellow-100{
   --border-opacity: 1;
-  border-color: #fffff0;
+  border-color: #f3f3f3ff0;
   border-color: rgba(255, 255, 240, var(--border-opacity));
 }
 
@@ -4962,7 +4962,7 @@ div.code-toolbar .toolbar button:hover {
 
 .border-pink-100{
   --border-opacity: 1;
-  border-color: #fff5f7;
+  border-color: #f3f3f35f7;
   border-color: rgba(255, 245, 247, var(--border-opacity));
 }
 
@@ -5030,7 +5030,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:border-white:hover{
   --border-opacity: 1;
-  border-color: #fff;
+  border-color: #f3f3f3;
   border-color: rgba(255, 255, 255, var(--border-opacity));
 }
 
@@ -5090,7 +5090,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:border-red-100:hover{
   --border-opacity: 1;
-  border-color: #fff5f5;
+  border-color: #f3f3f35f5;
   border-color: rgba(255, 245, 245, var(--border-opacity));
 }
 
@@ -5144,7 +5144,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:border-orange-100:hover{
   --border-opacity: 1;
-  border-color: #fffaf0;
+  border-color: #f3f3f3af0;
   border-color: rgba(255, 250, 240, var(--border-opacity));
 }
 
@@ -5198,7 +5198,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:border-yellow-100:hover{
   --border-opacity: 1;
-  border-color: #fffff0;
+  border-color: #f3f3f3ff0;
   border-color: rgba(255, 255, 240, var(--border-opacity));
 }
 
@@ -5522,7 +5522,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:border-pink-100:hover{
   --border-opacity: 1;
-  border-color: #fff5f7;
+  border-color: #f3f3f35f7;
   border-color: rgba(255, 245, 247, var(--border-opacity));
 }
 
@@ -5590,7 +5590,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:border-white:focus{
   --border-opacity: 1;
-  border-color: #fff;
+  border-color: #f3f3f3;
   border-color: rgba(255, 255, 255, var(--border-opacity));
 }
 
@@ -5650,7 +5650,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:border-red-100:focus{
   --border-opacity: 1;
-  border-color: #fff5f5;
+  border-color: #f3f3f35f5;
   border-color: rgba(255, 245, 245, var(--border-opacity));
 }
 
@@ -5704,7 +5704,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:border-orange-100:focus{
   --border-opacity: 1;
-  border-color: #fffaf0;
+  border-color: #f3f3f3af0;
   border-color: rgba(255, 250, 240, var(--border-opacity));
 }
 
@@ -5758,7 +5758,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:border-yellow-100:focus{
   --border-opacity: 1;
-  border-color: #fffff0;
+  border-color: #f3f3f3ff0;
   border-color: rgba(255, 255, 240, var(--border-opacity));
 }
 
@@ -6082,7 +6082,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:border-pink-100:focus{
   --border-opacity: 1;
-  border-color: #fff5f7;
+  border-color: #f3f3f35f7;
   border-color: rgba(255, 245, 247, var(--border-opacity));
 }
 
@@ -9550,31 +9550,31 @@ div.code-toolbar .toolbar button:hover {
 
 .placeholder-white::-webkit-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--placeholder-opacity));
 }
 
 .placeholder-white::-moz-placeholder{
   --placeholder-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--placeholder-opacity));
 }
 
 .placeholder-white:-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--placeholder-opacity));
 }
 
 .placeholder-white::-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--placeholder-opacity));
 }
 
 .placeholder-white::placeholder{
   --placeholder-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--placeholder-opacity));
 }
 
@@ -9850,31 +9850,31 @@ div.code-toolbar .toolbar button:hover {
 
 .placeholder-red-100::-webkit-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f5;
+  color: #f3f3f35f5;
   color: rgba(255, 245, 245, var(--placeholder-opacity));
 }
 
 .placeholder-red-100::-moz-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f5;
+  color: #f3f3f35f5;
   color: rgba(255, 245, 245, var(--placeholder-opacity));
 }
 
 .placeholder-red-100:-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f5;
+  color: #f3f3f35f5;
   color: rgba(255, 245, 245, var(--placeholder-opacity));
 }
 
 .placeholder-red-100::-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f5;
+  color: #f3f3f35f5;
   color: rgba(255, 245, 245, var(--placeholder-opacity));
 }
 
 .placeholder-red-100::placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f5;
+  color: #f3f3f35f5;
   color: rgba(255, 245, 245, var(--placeholder-opacity));
 }
 
@@ -10120,31 +10120,31 @@ div.code-toolbar .toolbar button:hover {
 
 .placeholder-orange-100::-webkit-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fffaf0;
+  color: #f3f3f3af0;
   color: rgba(255, 250, 240, var(--placeholder-opacity));
 }
 
 .placeholder-orange-100::-moz-placeholder{
   --placeholder-opacity: 1;
-  color: #fffaf0;
+  color: #f3f3f3af0;
   color: rgba(255, 250, 240, var(--placeholder-opacity));
 }
 
 .placeholder-orange-100:-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fffaf0;
+  color: #f3f3f3af0;
   color: rgba(255, 250, 240, var(--placeholder-opacity));
 }
 
 .placeholder-orange-100::-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fffaf0;
+  color: #f3f3f3af0;
   color: rgba(255, 250, 240, var(--placeholder-opacity));
 }
 
 .placeholder-orange-100::placeholder{
   --placeholder-opacity: 1;
-  color: #fffaf0;
+  color: #f3f3f3af0;
   color: rgba(255, 250, 240, var(--placeholder-opacity));
 }
 
@@ -10390,31 +10390,31 @@ div.code-toolbar .toolbar button:hover {
 
 .placeholder-yellow-100::-webkit-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fffff0;
+  color: #f3f3f3ff0;
   color: rgba(255, 255, 240, var(--placeholder-opacity));
 }
 
 .placeholder-yellow-100::-moz-placeholder{
   --placeholder-opacity: 1;
-  color: #fffff0;
+  color: #f3f3f3ff0;
   color: rgba(255, 255, 240, var(--placeholder-opacity));
 }
 
 .placeholder-yellow-100:-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fffff0;
+  color: #f3f3f3ff0;
   color: rgba(255, 255, 240, var(--placeholder-opacity));
 }
 
 .placeholder-yellow-100::-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fffff0;
+  color: #f3f3f3ff0;
   color: rgba(255, 255, 240, var(--placeholder-opacity));
 }
 
 .placeholder-yellow-100::placeholder{
   --placeholder-opacity: 1;
-  color: #fffff0;
+  color: #f3f3f3ff0;
   color: rgba(255, 255, 240, var(--placeholder-opacity));
 }
 
@@ -12010,31 +12010,31 @@ div.code-toolbar .toolbar button:hover {
 
 .placeholder-pink-100::-webkit-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f7;
+  color: #f3f3f35f7;
   color: rgba(255, 245, 247, var(--placeholder-opacity));
 }
 
 .placeholder-pink-100::-moz-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f7;
+  color: #f3f3f35f7;
   color: rgba(255, 245, 247, var(--placeholder-opacity));
 }
 
 .placeholder-pink-100:-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f7;
+  color: #f3f3f35f7;
   color: rgba(255, 245, 247, var(--placeholder-opacity));
 }
 
 .placeholder-pink-100::-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f7;
+  color: #f3f3f35f7;
   color: rgba(255, 245, 247, var(--placeholder-opacity));
 }
 
 .placeholder-pink-100::placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f7;
+  color: #f3f3f35f7;
   color: rgba(255, 245, 247, var(--placeholder-opacity));
 }
 
@@ -12350,31 +12350,31 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:placeholder-white:focus::-webkit-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-white:focus::-moz-placeholder{
   --placeholder-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-white:focus:-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-white:focus::-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-white:focus::placeholder{
   --placeholder-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--placeholder-opacity));
 }
 
@@ -12650,31 +12650,31 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:placeholder-red-100:focus::-webkit-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f5;
+  color: #f3f3f35f5;
   color: rgba(255, 245, 245, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-red-100:focus::-moz-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f5;
+  color: #f3f3f35f5;
   color: rgba(255, 245, 245, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-red-100:focus:-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f5;
+  color: #f3f3f35f5;
   color: rgba(255, 245, 245, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-red-100:focus::-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f5;
+  color: #f3f3f35f5;
   color: rgba(255, 245, 245, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-red-100:focus::placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f5;
+  color: #f3f3f35f5;
   color: rgba(255, 245, 245, var(--placeholder-opacity));
 }
 
@@ -12920,31 +12920,31 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:placeholder-orange-100:focus::-webkit-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fffaf0;
+  color: #f3f3f3af0;
   color: rgba(255, 250, 240, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-orange-100:focus::-moz-placeholder{
   --placeholder-opacity: 1;
-  color: #fffaf0;
+  color: #f3f3f3af0;
   color: rgba(255, 250, 240, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-orange-100:focus:-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fffaf0;
+  color: #f3f3f3af0;
   color: rgba(255, 250, 240, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-orange-100:focus::-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fffaf0;
+  color: #f3f3f3af0;
   color: rgba(255, 250, 240, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-orange-100:focus::placeholder{
   --placeholder-opacity: 1;
-  color: #fffaf0;
+  color: #f3f3f3af0;
   color: rgba(255, 250, 240, var(--placeholder-opacity));
 }
 
@@ -13190,31 +13190,31 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:placeholder-yellow-100:focus::-webkit-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fffff0;
+  color: #f3f3f3ff0;
   color: rgba(255, 255, 240, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-yellow-100:focus::-moz-placeholder{
   --placeholder-opacity: 1;
-  color: #fffff0;
+  color: #f3f3f3ff0;
   color: rgba(255, 255, 240, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-yellow-100:focus:-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fffff0;
+  color: #f3f3f3ff0;
   color: rgba(255, 255, 240, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-yellow-100:focus::-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fffff0;
+  color: #f3f3f3ff0;
   color: rgba(255, 255, 240, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-yellow-100:focus::placeholder{
   --placeholder-opacity: 1;
-  color: #fffff0;
+  color: #f3f3f3ff0;
   color: rgba(255, 255, 240, var(--placeholder-opacity));
 }
 
@@ -14810,31 +14810,31 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:placeholder-pink-100:focus::-webkit-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f7;
+  color: #f3f3f35f7;
   color: rgba(255, 245, 247, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-pink-100:focus::-moz-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f7;
+  color: #f3f3f35f7;
   color: rgba(255, 245, 247, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-pink-100:focus:-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f7;
+  color: #f3f3f35f7;
   color: rgba(255, 245, 247, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-pink-100:focus::-ms-input-placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f7;
+  color: #f3f3f35f7;
   color: rgba(255, 245, 247, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-pink-100:focus::placeholder{
   --placeholder-opacity: 1;
-  color: #fff5f7;
+  color: #f3f3f35f7;
   color: rgba(255, 245, 247, var(--placeholder-opacity));
 }
 
@@ -15569,7 +15569,7 @@ div.code-toolbar .toolbar button:hover {
 
 .text-white{
   --text-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
@@ -15629,7 +15629,7 @@ div.code-toolbar .toolbar button:hover {
 
 .text-red-100{
   --text-opacity: 1;
-  color: #fff5f5;
+  color: #f3f3f35f5;
   color: rgba(255, 245, 245, var(--text-opacity));
 }
 
@@ -15683,7 +15683,7 @@ div.code-toolbar .toolbar button:hover {
 
 .text-orange-100{
   --text-opacity: 1;
-  color: #fffaf0;
+  color: #f3f3f3af0;
   color: rgba(255, 250, 240, var(--text-opacity));
 }
 
@@ -15737,7 +15737,7 @@ div.code-toolbar .toolbar button:hover {
 
 .text-yellow-100{
   --text-opacity: 1;
-  color: #fffff0;
+  color: #f3f3f3ff0;
   color: rgba(255, 255, 240, var(--text-opacity));
 }
 
@@ -16061,7 +16061,7 @@ div.code-toolbar .toolbar button:hover {
 
 .text-pink-100{
   --text-opacity: 1;
-  color: #fff5f7;
+  color: #f3f3f35f7;
   color: rgba(255, 245, 247, var(--text-opacity));
 }
 
@@ -16129,7 +16129,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:text-white:hover{
   --text-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
@@ -16189,7 +16189,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:text-red-100:hover{
   --text-opacity: 1;
-  color: #fff5f5;
+  color: #f3f3f35f5;
   color: rgba(255, 245, 245, var(--text-opacity));
 }
 
@@ -16243,7 +16243,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:text-orange-100:hover{
   --text-opacity: 1;
-  color: #fffaf0;
+  color: #f3f3f3af0;
   color: rgba(255, 250, 240, var(--text-opacity));
 }
 
@@ -16297,7 +16297,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:text-yellow-100:hover{
   --text-opacity: 1;
-  color: #fffff0;
+  color: #f3f3f3ff0;
   color: rgba(255, 255, 240, var(--text-opacity));
 }
 
@@ -16621,7 +16621,7 @@ div.code-toolbar .toolbar button:hover {
 
 .hover\:text-pink-100:hover{
   --text-opacity: 1;
-  color: #fff5f7;
+  color: #f3f3f35f7;
   color: rgba(255, 245, 247, var(--text-opacity));
 }
 
@@ -16689,7 +16689,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:text-white:focus{
   --text-opacity: 1;
-  color: #fff;
+  color: #f3f3f3;
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
@@ -16749,7 +16749,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:text-red-100:focus{
   --text-opacity: 1;
-  color: #fff5f5;
+  color: #f3f3f35f5;
   color: rgba(255, 245, 245, var(--text-opacity));
 }
 
@@ -16803,7 +16803,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:text-orange-100:focus{
   --text-opacity: 1;
-  color: #fffaf0;
+  color: #f3f3f3af0;
   color: rgba(255, 250, 240, var(--text-opacity));
 }
 
@@ -16857,7 +16857,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:text-yellow-100:focus{
   --text-opacity: 1;
-  color: #fffff0;
+  color: #f3f3f3ff0;
   color: rgba(255, 255, 240, var(--text-opacity));
 }
 
@@ -17181,7 +17181,7 @@ div.code-toolbar .toolbar button:hover {
 
 .focus\:text-pink-100:focus{
   --text-opacity: 1;
-  color: #fff5f7;
+  color: #f3f3f35f7;
   color: rgba(255, 245, 247, var(--text-opacity));
 }
 
@@ -23965,7 +23965,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:divide-white > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--divide-opacity));
   }
 
@@ -24025,7 +24025,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:divide-red-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--divide-opacity));
   }
 
@@ -24079,7 +24079,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:divide-orange-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--divide-opacity));
   }
 
@@ -24133,7 +24133,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:divide-yellow-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--divide-opacity));
   }
 
@@ -24457,7 +24457,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:divide-pink-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--divide-opacity));
   }
 
@@ -24609,7 +24609,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:bg-white{
     --bg-opacity: 1;
-    background-color: #fff;
+    background-color: #f3f3f3;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
@@ -24669,7 +24669,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:bg-red-100{
     --bg-opacity: 1;
-    background-color: #fff5f5;
+    background-color: #f3f3f35f5;
     background-color: rgba(255, 245, 245, var(--bg-opacity));
   }
 
@@ -24723,7 +24723,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:bg-orange-100{
     --bg-opacity: 1;
-    background-color: #fffaf0;
+    background-color: #f3f3f3af0;
     background-color: rgba(255, 250, 240, var(--bg-opacity));
   }
 
@@ -24777,7 +24777,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:bg-yellow-100{
     --bg-opacity: 1;
-    background-color: #fffff0;
+    background-color: #f3f3f3ff0;
     background-color: rgba(255, 255, 240, var(--bg-opacity));
   }
 
@@ -25101,7 +25101,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:bg-pink-100{
     --bg-opacity: 1;
-    background-color: #fff5f7;
+    background-color: #f3f3f35f7;
     background-color: rgba(255, 245, 247, var(--bg-opacity));
   }
 
@@ -25169,7 +25169,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:bg-white:hover{
     --bg-opacity: 1;
-    background-color: #fff;
+    background-color: #f3f3f3;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
@@ -25229,7 +25229,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:bg-red-100:hover{
     --bg-opacity: 1;
-    background-color: #fff5f5;
+    background-color: #f3f3f35f5;
     background-color: rgba(255, 245, 245, var(--bg-opacity));
   }
 
@@ -25283,7 +25283,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:bg-orange-100:hover{
     --bg-opacity: 1;
-    background-color: #fffaf0;
+    background-color: #f3f3f3af0;
     background-color: rgba(255, 250, 240, var(--bg-opacity));
   }
 
@@ -25337,7 +25337,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:bg-yellow-100:hover{
     --bg-opacity: 1;
-    background-color: #fffff0;
+    background-color: #f3f3f3ff0;
     background-color: rgba(255, 255, 240, var(--bg-opacity));
   }
 
@@ -25661,7 +25661,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:bg-pink-100:hover{
     --bg-opacity: 1;
-    background-color: #fff5f7;
+    background-color: #f3f3f35f7;
     background-color: rgba(255, 245, 247, var(--bg-opacity));
   }
 
@@ -25729,7 +25729,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:bg-white:focus{
     --bg-opacity: 1;
-    background-color: #fff;
+    background-color: #f3f3f3;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
@@ -25789,7 +25789,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:bg-red-100:focus{
     --bg-opacity: 1;
-    background-color: #fff5f5;
+    background-color: #f3f3f35f5;
     background-color: rgba(255, 245, 245, var(--bg-opacity));
   }
 
@@ -25843,7 +25843,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:bg-orange-100:focus{
     --bg-opacity: 1;
-    background-color: #fffaf0;
+    background-color: #f3f3f3af0;
     background-color: rgba(255, 250, 240, var(--bg-opacity));
   }
 
@@ -25897,7 +25897,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:bg-yellow-100:focus{
     --bg-opacity: 1;
-    background-color: #fffff0;
+    background-color: #f3f3f3ff0;
     background-color: rgba(255, 255, 240, var(--bg-opacity));
   }
 
@@ -26221,7 +26221,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:bg-pink-100:focus{
     --bg-opacity: 1;
-    background-color: #fff5f7;
+    background-color: #f3f3f35f7;
     background-color: rgba(255, 245, 247, var(--bg-opacity));
   }
 
@@ -26429,7 +26429,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:border-white{
     --border-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
@@ -26489,7 +26489,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:border-red-100{
     --border-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--border-opacity));
   }
 
@@ -26543,7 +26543,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:border-orange-100{
     --border-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--border-opacity));
   }
 
@@ -26597,7 +26597,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:border-yellow-100{
     --border-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--border-opacity));
   }
 
@@ -26921,7 +26921,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:border-pink-100{
     --border-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--border-opacity));
   }
 
@@ -26989,7 +26989,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:border-white:hover{
     --border-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
@@ -27049,7 +27049,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:border-red-100:hover{
     --border-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--border-opacity));
   }
 
@@ -27103,7 +27103,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:border-orange-100:hover{
     --border-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--border-opacity));
   }
 
@@ -27157,7 +27157,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:border-yellow-100:hover{
     --border-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--border-opacity));
   }
 
@@ -27481,7 +27481,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:border-pink-100:hover{
     --border-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--border-opacity));
   }
 
@@ -27549,7 +27549,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:border-white:focus{
     --border-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
@@ -27609,7 +27609,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:border-red-100:focus{
     --border-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--border-opacity));
   }
 
@@ -27663,7 +27663,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:border-orange-100:focus{
     --border-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--border-opacity));
   }
 
@@ -27717,7 +27717,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:border-yellow-100:focus{
     --border-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--border-opacity));
   }
 
@@ -28041,7 +28041,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:border-pink-100:focus{
     --border-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--border-opacity));
   }
 
@@ -31509,31 +31509,31 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:placeholder-white::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-white::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-white:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-white::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-white::placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
@@ -31809,31 +31809,31 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:placeholder-red-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-red-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-red-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-red-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-red-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
@@ -32079,31 +32079,31 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:placeholder-orange-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-orange-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-orange-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-orange-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-orange-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
@@ -32349,31 +32349,31 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:placeholder-yellow-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-yellow-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-yellow-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-yellow-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-yellow-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
@@ -33969,31 +33969,31 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:placeholder-pink-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-pink-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-pink-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-pink-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-pink-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
@@ -34309,31 +34309,31 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:placeholder-white:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-white:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-white:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-white:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-white:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
@@ -34609,31 +34609,31 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:placeholder-red-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-red-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-red-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-red-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-red-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
@@ -34879,31 +34879,31 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:placeholder-orange-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-orange-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-orange-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-orange-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-orange-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
@@ -35149,31 +35149,31 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:placeholder-yellow-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-yellow-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-yellow-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-yellow-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-yellow-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
@@ -36769,31 +36769,31 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:placeholder-pink-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-pink-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-pink-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-pink-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-pink-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
@@ -37528,7 +37528,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:text-white{
     --text-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
@@ -37588,7 +37588,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:text-red-100{
     --text-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--text-opacity));
   }
 
@@ -37642,7 +37642,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:text-orange-100{
     --text-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--text-opacity));
   }
 
@@ -37696,7 +37696,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:text-yellow-100{
     --text-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--text-opacity));
   }
 
@@ -38020,7 +38020,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:text-pink-100{
     --text-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--text-opacity));
   }
 
@@ -38088,7 +38088,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:text-white:hover{
     --text-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
@@ -38148,7 +38148,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:text-red-100:hover{
     --text-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--text-opacity));
   }
 
@@ -38202,7 +38202,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:text-orange-100:hover{
     --text-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--text-opacity));
   }
 
@@ -38256,7 +38256,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:text-yellow-100:hover{
     --text-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--text-opacity));
   }
 
@@ -38580,7 +38580,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:hover\:text-pink-100:hover{
     --text-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--text-opacity));
   }
 
@@ -38648,7 +38648,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:text-white:focus{
     --text-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
@@ -38708,7 +38708,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:text-red-100:focus{
     --text-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--text-opacity));
   }
 
@@ -38762,7 +38762,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:text-orange-100:focus{
     --text-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--text-opacity));
   }
 
@@ -38816,7 +38816,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:text-yellow-100:focus{
     --text-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--text-opacity));
   }
 
@@ -39140,7 +39140,7 @@ div.code-toolbar .toolbar button:hover {
 
   .sm\:focus\:text-pink-100:focus{
     --text-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--text-opacity));
   }
 
@@ -43389,7 +43389,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:divide-white > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--divide-opacity));
   }
 
@@ -43449,7 +43449,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:divide-red-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--divide-opacity));
   }
 
@@ -43503,7 +43503,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:divide-orange-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--divide-opacity));
   }
 
@@ -43557,7 +43557,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:divide-yellow-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--divide-opacity));
   }
 
@@ -43881,7 +43881,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:divide-pink-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--divide-opacity));
   }
 
@@ -44033,7 +44033,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:bg-white{
     --bg-opacity: 1;
-    background-color: #fff;
+    background-color: #f3f3f3;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
@@ -44093,7 +44093,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:bg-red-100{
     --bg-opacity: 1;
-    background-color: #fff5f5;
+    background-color: #f3f3f35f5;
     background-color: rgba(255, 245, 245, var(--bg-opacity));
   }
 
@@ -44147,7 +44147,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:bg-orange-100{
     --bg-opacity: 1;
-    background-color: #fffaf0;
+    background-color: #f3f3f3af0;
     background-color: rgba(255, 250, 240, var(--bg-opacity));
   }
 
@@ -44201,7 +44201,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:bg-yellow-100{
     --bg-opacity: 1;
-    background-color: #fffff0;
+    background-color: #f3f3f3ff0;
     background-color: rgba(255, 255, 240, var(--bg-opacity));
   }
 
@@ -44525,7 +44525,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:bg-pink-100{
     --bg-opacity: 1;
-    background-color: #fff5f7;
+    background-color: #f3f3f35f7;
     background-color: rgba(255, 245, 247, var(--bg-opacity));
   }
 
@@ -44593,7 +44593,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:bg-white:hover{
     --bg-opacity: 1;
-    background-color: #fff;
+    background-color: #f3f3f3;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
@@ -44653,7 +44653,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:bg-red-100:hover{
     --bg-opacity: 1;
-    background-color: #fff5f5;
+    background-color: #f3f3f35f5;
     background-color: rgba(255, 245, 245, var(--bg-opacity));
   }
 
@@ -44707,7 +44707,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:bg-orange-100:hover{
     --bg-opacity: 1;
-    background-color: #fffaf0;
+    background-color: #f3f3f3af0;
     background-color: rgba(255, 250, 240, var(--bg-opacity));
   }
 
@@ -44761,7 +44761,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:bg-yellow-100:hover{
     --bg-opacity: 1;
-    background-color: #fffff0;
+    background-color: #f3f3f3ff0;
     background-color: rgba(255, 255, 240, var(--bg-opacity));
   }
 
@@ -45085,7 +45085,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:bg-pink-100:hover{
     --bg-opacity: 1;
-    background-color: #fff5f7;
+    background-color: #f3f3f35f7;
     background-color: rgba(255, 245, 247, var(--bg-opacity));
   }
 
@@ -45153,7 +45153,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:bg-white:focus{
     --bg-opacity: 1;
-    background-color: #fff;
+    background-color: #f3f3f3;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
@@ -45213,7 +45213,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:bg-red-100:focus{
     --bg-opacity: 1;
-    background-color: #fff5f5;
+    background-color: #f3f3f35f5;
     background-color: rgba(255, 245, 245, var(--bg-opacity));
   }
 
@@ -45267,7 +45267,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:bg-orange-100:focus{
     --bg-opacity: 1;
-    background-color: #fffaf0;
+    background-color: #f3f3f3af0;
     background-color: rgba(255, 250, 240, var(--bg-opacity));
   }
 
@@ -45321,7 +45321,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:bg-yellow-100:focus{
     --bg-opacity: 1;
-    background-color: #fffff0;
+    background-color: #f3f3f3ff0;
     background-color: rgba(255, 255, 240, var(--bg-opacity));
   }
 
@@ -45645,7 +45645,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:bg-pink-100:focus{
     --bg-opacity: 1;
-    background-color: #fff5f7;
+    background-color: #f3f3f35f7;
     background-color: rgba(255, 245, 247, var(--bg-opacity));
   }
 
@@ -45853,7 +45853,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:border-white{
     --border-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
@@ -45913,7 +45913,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:border-red-100{
     --border-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--border-opacity));
   }
 
@@ -45967,7 +45967,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:border-orange-100{
     --border-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--border-opacity));
   }
 
@@ -46021,7 +46021,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:border-yellow-100{
     --border-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--border-opacity));
   }
 
@@ -46345,7 +46345,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:border-pink-100{
     --border-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--border-opacity));
   }
 
@@ -46413,7 +46413,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:border-white:hover{
     --border-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
@@ -46473,7 +46473,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:border-red-100:hover{
     --border-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--border-opacity));
   }
 
@@ -46527,7 +46527,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:border-orange-100:hover{
     --border-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--border-opacity));
   }
 
@@ -46581,7 +46581,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:border-yellow-100:hover{
     --border-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--border-opacity));
   }
 
@@ -46905,7 +46905,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:border-pink-100:hover{
     --border-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--border-opacity));
   }
 
@@ -46973,7 +46973,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:border-white:focus{
     --border-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
@@ -47033,7 +47033,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:border-red-100:focus{
     --border-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--border-opacity));
   }
 
@@ -47087,7 +47087,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:border-orange-100:focus{
     --border-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--border-opacity));
   }
 
@@ -47141,7 +47141,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:border-yellow-100:focus{
     --border-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--border-opacity));
   }
 
@@ -47465,7 +47465,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:border-pink-100:focus{
     --border-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--border-opacity));
   }
 
@@ -50933,31 +50933,31 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:placeholder-white::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .md\:placeholder-white::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .md\:placeholder-white:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .md\:placeholder-white::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .md\:placeholder-white::placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
@@ -51233,31 +51233,31 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:placeholder-red-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .md\:placeholder-red-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .md\:placeholder-red-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .md\:placeholder-red-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .md\:placeholder-red-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
@@ -51503,31 +51503,31 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:placeholder-orange-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .md\:placeholder-orange-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .md\:placeholder-orange-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .md\:placeholder-orange-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .md\:placeholder-orange-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
@@ -51773,31 +51773,31 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:placeholder-yellow-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .md\:placeholder-yellow-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .md\:placeholder-yellow-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .md\:placeholder-yellow-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .md\:placeholder-yellow-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
@@ -53393,31 +53393,31 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:placeholder-pink-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .md\:placeholder-pink-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .md\:placeholder-pink-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .md\:placeholder-pink-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .md\:placeholder-pink-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
@@ -53733,31 +53733,31 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:placeholder-white:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-white:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-white:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-white:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-white:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
@@ -54033,31 +54033,31 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:placeholder-red-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-red-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-red-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-red-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-red-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
@@ -54303,31 +54303,31 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:placeholder-orange-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-orange-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-orange-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-orange-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-orange-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
@@ -54573,31 +54573,31 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:placeholder-yellow-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-yellow-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-yellow-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-yellow-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-yellow-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
@@ -56193,31 +56193,31 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:placeholder-pink-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-pink-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-pink-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-pink-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-pink-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
@@ -56952,7 +56952,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:text-white{
     --text-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
@@ -57012,7 +57012,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:text-red-100{
     --text-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--text-opacity));
   }
 
@@ -57066,7 +57066,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:text-orange-100{
     --text-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--text-opacity));
   }
 
@@ -57120,7 +57120,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:text-yellow-100{
     --text-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--text-opacity));
   }
 
@@ -57444,7 +57444,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:text-pink-100{
     --text-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--text-opacity));
   }
 
@@ -57512,7 +57512,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:text-white:hover{
     --text-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
@@ -57572,7 +57572,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:text-red-100:hover{
     --text-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--text-opacity));
   }
 
@@ -57626,7 +57626,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:text-orange-100:hover{
     --text-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--text-opacity));
   }
 
@@ -57680,7 +57680,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:text-yellow-100:hover{
     --text-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--text-opacity));
   }
 
@@ -58004,7 +58004,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:hover\:text-pink-100:hover{
     --text-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--text-opacity));
   }
 
@@ -58072,7 +58072,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:text-white:focus{
     --text-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
@@ -58132,7 +58132,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:text-red-100:focus{
     --text-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--text-opacity));
   }
 
@@ -58186,7 +58186,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:text-orange-100:focus{
     --text-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--text-opacity));
   }
 
@@ -58240,7 +58240,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:text-yellow-100:focus{
     --text-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--text-opacity));
   }
 
@@ -58564,7 +58564,7 @@ div.code-toolbar .toolbar button:hover {
 
   .md\:focus\:text-pink-100:focus{
     --text-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--text-opacity));
   }
 
@@ -62813,7 +62813,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:divide-white > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--divide-opacity));
   }
 
@@ -62873,7 +62873,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:divide-red-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--divide-opacity));
   }
 
@@ -62927,7 +62927,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:divide-orange-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--divide-opacity));
   }
 
@@ -62981,7 +62981,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:divide-yellow-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--divide-opacity));
   }
 
@@ -63305,7 +63305,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:divide-pink-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--divide-opacity));
   }
 
@@ -63457,7 +63457,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:bg-white{
     --bg-opacity: 1;
-    background-color: #fff;
+    background-color: #f3f3f3;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
@@ -63517,7 +63517,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:bg-red-100{
     --bg-opacity: 1;
-    background-color: #fff5f5;
+    background-color: #f3f3f35f5;
     background-color: rgba(255, 245, 245, var(--bg-opacity));
   }
 
@@ -63571,7 +63571,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:bg-orange-100{
     --bg-opacity: 1;
-    background-color: #fffaf0;
+    background-color: #f3f3f3af0;
     background-color: rgba(255, 250, 240, var(--bg-opacity));
   }
 
@@ -63625,7 +63625,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:bg-yellow-100{
     --bg-opacity: 1;
-    background-color: #fffff0;
+    background-color: #f3f3f3ff0;
     background-color: rgba(255, 255, 240, var(--bg-opacity));
   }
 
@@ -63949,7 +63949,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:bg-pink-100{
     --bg-opacity: 1;
-    background-color: #fff5f7;
+    background-color: #f3f3f35f7;
     background-color: rgba(255, 245, 247, var(--bg-opacity));
   }
 
@@ -64017,7 +64017,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:bg-white:hover{
     --bg-opacity: 1;
-    background-color: #fff;
+    background-color: #f3f3f3;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
@@ -64077,7 +64077,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:bg-red-100:hover{
     --bg-opacity: 1;
-    background-color: #fff5f5;
+    background-color: #f3f3f35f5;
     background-color: rgba(255, 245, 245, var(--bg-opacity));
   }
 
@@ -64131,7 +64131,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:bg-orange-100:hover{
     --bg-opacity: 1;
-    background-color: #fffaf0;
+    background-color: #f3f3f3af0;
     background-color: rgba(255, 250, 240, var(--bg-opacity));
   }
 
@@ -64185,7 +64185,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:bg-yellow-100:hover{
     --bg-opacity: 1;
-    background-color: #fffff0;
+    background-color: #f3f3f3ff0;
     background-color: rgba(255, 255, 240, var(--bg-opacity));
   }
 
@@ -64509,7 +64509,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:bg-pink-100:hover{
     --bg-opacity: 1;
-    background-color: #fff5f7;
+    background-color: #f3f3f35f7;
     background-color: rgba(255, 245, 247, var(--bg-opacity));
   }
 
@@ -64577,7 +64577,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:bg-white:focus{
     --bg-opacity: 1;
-    background-color: #fff;
+    background-color: #f3f3f3;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
@@ -64637,7 +64637,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:bg-red-100:focus{
     --bg-opacity: 1;
-    background-color: #fff5f5;
+    background-color: #f3f3f35f5;
     background-color: rgba(255, 245, 245, var(--bg-opacity));
   }
 
@@ -64691,7 +64691,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:bg-orange-100:focus{
     --bg-opacity: 1;
-    background-color: #fffaf0;
+    background-color: #f3f3f3af0;
     background-color: rgba(255, 250, 240, var(--bg-opacity));
   }
 
@@ -64745,7 +64745,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:bg-yellow-100:focus{
     --bg-opacity: 1;
-    background-color: #fffff0;
+    background-color: #f3f3f3ff0;
     background-color: rgba(255, 255, 240, var(--bg-opacity));
   }
 
@@ -65069,7 +65069,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:bg-pink-100:focus{
     --bg-opacity: 1;
-    background-color: #fff5f7;
+    background-color: #f3f3f35f7;
     background-color: rgba(255, 245, 247, var(--bg-opacity));
   }
 
@@ -65277,7 +65277,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:border-white{
     --border-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
@@ -65337,7 +65337,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:border-red-100{
     --border-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--border-opacity));
   }
 
@@ -65391,7 +65391,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:border-orange-100{
     --border-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--border-opacity));
   }
 
@@ -65445,7 +65445,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:border-yellow-100{
     --border-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--border-opacity));
   }
 
@@ -65769,7 +65769,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:border-pink-100{
     --border-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--border-opacity));
   }
 
@@ -65837,7 +65837,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:border-white:hover{
     --border-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
@@ -65897,7 +65897,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:border-red-100:hover{
     --border-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--border-opacity));
   }
 
@@ -65951,7 +65951,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:border-orange-100:hover{
     --border-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--border-opacity));
   }
 
@@ -66005,7 +66005,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:border-yellow-100:hover{
     --border-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--border-opacity));
   }
 
@@ -66329,7 +66329,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:border-pink-100:hover{
     --border-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--border-opacity));
   }
 
@@ -66397,7 +66397,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:border-white:focus{
     --border-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
@@ -66457,7 +66457,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:border-red-100:focus{
     --border-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--border-opacity));
   }
 
@@ -66511,7 +66511,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:border-orange-100:focus{
     --border-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--border-opacity));
   }
 
@@ -66565,7 +66565,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:border-yellow-100:focus{
     --border-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--border-opacity));
   }
 
@@ -66889,7 +66889,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:border-pink-100:focus{
     --border-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--border-opacity));
   }
 
@@ -70357,31 +70357,31 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:placeholder-white::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-white::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-white:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-white::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-white::placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
@@ -70657,31 +70657,31 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:placeholder-red-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-red-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-red-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-red-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-red-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
@@ -70927,31 +70927,31 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:placeholder-orange-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-orange-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-orange-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-orange-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-orange-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
@@ -71197,31 +71197,31 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:placeholder-yellow-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-yellow-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-yellow-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-yellow-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-yellow-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
@@ -72817,31 +72817,31 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:placeholder-pink-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-pink-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-pink-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-pink-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-pink-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
@@ -73157,31 +73157,31 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:placeholder-white:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-white:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-white:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-white:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-white:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
@@ -73457,31 +73457,31 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:placeholder-red-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-red-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-red-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-red-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-red-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
@@ -73727,31 +73727,31 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:placeholder-orange-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-orange-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-orange-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-orange-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-orange-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
@@ -73997,31 +73997,31 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:placeholder-yellow-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-yellow-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-yellow-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-yellow-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-yellow-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
@@ -75617,31 +75617,31 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:placeholder-pink-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-pink-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-pink-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-pink-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-pink-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
@@ -76376,7 +76376,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:text-white{
     --text-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
@@ -76436,7 +76436,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:text-red-100{
     --text-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--text-opacity));
   }
 
@@ -76490,7 +76490,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:text-orange-100{
     --text-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--text-opacity));
   }
 
@@ -76544,7 +76544,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:text-yellow-100{
     --text-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--text-opacity));
   }
 
@@ -76868,7 +76868,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:text-pink-100{
     --text-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--text-opacity));
   }
 
@@ -76936,7 +76936,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:text-white:hover{
     --text-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
@@ -76996,7 +76996,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:text-red-100:hover{
     --text-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--text-opacity));
   }
 
@@ -77050,7 +77050,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:text-orange-100:hover{
     --text-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--text-opacity));
   }
 
@@ -77104,7 +77104,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:text-yellow-100:hover{
     --text-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--text-opacity));
   }
 
@@ -77428,7 +77428,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:hover\:text-pink-100:hover{
     --text-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--text-opacity));
   }
 
@@ -77496,7 +77496,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:text-white:focus{
     --text-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
@@ -77556,7 +77556,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:text-red-100:focus{
     --text-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--text-opacity));
   }
 
@@ -77610,7 +77610,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:text-orange-100:focus{
     --text-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--text-opacity));
   }
 
@@ -77664,7 +77664,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:text-yellow-100:focus{
     --text-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--text-opacity));
   }
 
@@ -77988,7 +77988,7 @@ div.code-toolbar .toolbar button:hover {
 
   .lg\:focus\:text-pink-100:focus{
     --text-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--text-opacity));
   }
 
@@ -82237,7 +82237,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:divide-white > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--divide-opacity));
   }
 
@@ -82297,7 +82297,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:divide-red-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--divide-opacity));
   }
 
@@ -82351,7 +82351,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:divide-orange-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--divide-opacity));
   }
 
@@ -82405,7 +82405,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:divide-yellow-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--divide-opacity));
   }
 
@@ -82729,7 +82729,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:divide-pink-100 > :not(template) ~ :not(template){
     --divide-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--divide-opacity));
   }
 
@@ -82881,7 +82881,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:bg-white{
     --bg-opacity: 1;
-    background-color: #fff;
+    background-color: #f3f3f3;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
@@ -82941,7 +82941,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:bg-red-100{
     --bg-opacity: 1;
-    background-color: #fff5f5;
+    background-color: #f3f3f35f5;
     background-color: rgba(255, 245, 245, var(--bg-opacity));
   }
 
@@ -82995,7 +82995,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:bg-orange-100{
     --bg-opacity: 1;
-    background-color: #fffaf0;
+    background-color: #f3f3f3af0;
     background-color: rgba(255, 250, 240, var(--bg-opacity));
   }
 
@@ -83049,7 +83049,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:bg-yellow-100{
     --bg-opacity: 1;
-    background-color: #fffff0;
+    background-color: #f3f3f3ff0;
     background-color: rgba(255, 255, 240, var(--bg-opacity));
   }
 
@@ -83373,7 +83373,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:bg-pink-100{
     --bg-opacity: 1;
-    background-color: #fff5f7;
+    background-color: #f3f3f35f7;
     background-color: rgba(255, 245, 247, var(--bg-opacity));
   }
 
@@ -83441,7 +83441,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:bg-white:hover{
     --bg-opacity: 1;
-    background-color: #fff;
+    background-color: #f3f3f3;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
@@ -83501,7 +83501,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:bg-red-100:hover{
     --bg-opacity: 1;
-    background-color: #fff5f5;
+    background-color: #f3f3f35f5;
     background-color: rgba(255, 245, 245, var(--bg-opacity));
   }
 
@@ -83555,7 +83555,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:bg-orange-100:hover{
     --bg-opacity: 1;
-    background-color: #fffaf0;
+    background-color: #f3f3f3af0;
     background-color: rgba(255, 250, 240, var(--bg-opacity));
   }
 
@@ -83609,7 +83609,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:bg-yellow-100:hover{
     --bg-opacity: 1;
-    background-color: #fffff0;
+    background-color: #f3f3f3ff0;
     background-color: rgba(255, 255, 240, var(--bg-opacity));
   }
 
@@ -83933,7 +83933,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:bg-pink-100:hover{
     --bg-opacity: 1;
-    background-color: #fff5f7;
+    background-color: #f3f3f35f7;
     background-color: rgba(255, 245, 247, var(--bg-opacity));
   }
 
@@ -84001,7 +84001,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:bg-white:focus{
     --bg-opacity: 1;
-    background-color: #fff;
+    background-color: #f3f3f3;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
@@ -84061,7 +84061,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:bg-red-100:focus{
     --bg-opacity: 1;
-    background-color: #fff5f5;
+    background-color: #f3f3f35f5;
     background-color: rgba(255, 245, 245, var(--bg-opacity));
   }
 
@@ -84115,7 +84115,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:bg-orange-100:focus{
     --bg-opacity: 1;
-    background-color: #fffaf0;
+    background-color: #f3f3f3af0;
     background-color: rgba(255, 250, 240, var(--bg-opacity));
   }
 
@@ -84169,7 +84169,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:bg-yellow-100:focus{
     --bg-opacity: 1;
-    background-color: #fffff0;
+    background-color: #f3f3f3ff0;
     background-color: rgba(255, 255, 240, var(--bg-opacity));
   }
 
@@ -84493,7 +84493,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:bg-pink-100:focus{
     --bg-opacity: 1;
-    background-color: #fff5f7;
+    background-color: #f3f3f35f7;
     background-color: rgba(255, 245, 247, var(--bg-opacity));
   }
 
@@ -84701,7 +84701,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:border-white{
     --border-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
@@ -84761,7 +84761,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:border-red-100{
     --border-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--border-opacity));
   }
 
@@ -84815,7 +84815,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:border-orange-100{
     --border-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--border-opacity));
   }
 
@@ -84869,7 +84869,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:border-yellow-100{
     --border-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--border-opacity));
   }
 
@@ -85193,7 +85193,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:border-pink-100{
     --border-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--border-opacity));
   }
 
@@ -85261,7 +85261,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:border-white:hover{
     --border-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
@@ -85321,7 +85321,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:border-red-100:hover{
     --border-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--border-opacity));
   }
 
@@ -85375,7 +85375,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:border-orange-100:hover{
     --border-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--border-opacity));
   }
 
@@ -85429,7 +85429,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:border-yellow-100:hover{
     --border-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--border-opacity));
   }
 
@@ -85753,7 +85753,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:border-pink-100:hover{
     --border-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--border-opacity));
   }
 
@@ -85821,7 +85821,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:border-white:focus{
     --border-opacity: 1;
-    border-color: #fff;
+    border-color: #f3f3f3;
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
@@ -85881,7 +85881,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:border-red-100:focus{
     --border-opacity: 1;
-    border-color: #fff5f5;
+    border-color: #f3f3f35f5;
     border-color: rgba(255, 245, 245, var(--border-opacity));
   }
 
@@ -85935,7 +85935,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:border-orange-100:focus{
     --border-opacity: 1;
-    border-color: #fffaf0;
+    border-color: #f3f3f3af0;
     border-color: rgba(255, 250, 240, var(--border-opacity));
   }
 
@@ -85989,7 +85989,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:border-yellow-100:focus{
     --border-opacity: 1;
-    border-color: #fffff0;
+    border-color: #f3f3f3ff0;
     border-color: rgba(255, 255, 240, var(--border-opacity));
   }
 
@@ -86313,7 +86313,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:border-pink-100:focus{
     --border-opacity: 1;
-    border-color: #fff5f7;
+    border-color: #f3f3f35f7;
     border-color: rgba(255, 245, 247, var(--border-opacity));
   }
 
@@ -89781,31 +89781,31 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:placeholder-white::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-white::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-white:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-white::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-white::placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
@@ -90081,31 +90081,31 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:placeholder-red-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-red-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-red-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-red-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-red-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
@@ -90351,31 +90351,31 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:placeholder-orange-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-orange-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-orange-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-orange-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-orange-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
@@ -90621,31 +90621,31 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:placeholder-yellow-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-yellow-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-yellow-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-yellow-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-yellow-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
@@ -92241,31 +92241,31 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:placeholder-pink-100::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-pink-100::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-pink-100:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-pink-100::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-pink-100::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
@@ -92581,31 +92581,31 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:placeholder-white:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-white:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-white:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-white:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-white:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
@@ -92881,31 +92881,31 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:placeholder-red-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-red-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-red-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-red-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-red-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--placeholder-opacity));
   }
 
@@ -93151,31 +93151,31 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:placeholder-orange-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-orange-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-orange-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-orange-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-orange-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--placeholder-opacity));
   }
 
@@ -93421,31 +93421,31 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:placeholder-yellow-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-yellow-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-yellow-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-yellow-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-yellow-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--placeholder-opacity));
   }
 
@@ -95041,31 +95041,31 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:placeholder-pink-100:focus::-webkit-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-pink-100:focus::-moz-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-pink-100:focus:-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-pink-100:focus::-ms-input-placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-pink-100:focus::placeholder{
     --placeholder-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--placeholder-opacity));
   }
 
@@ -95800,7 +95800,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:text-white{
     --text-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
@@ -95860,7 +95860,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:text-red-100{
     --text-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--text-opacity));
   }
 
@@ -95914,7 +95914,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:text-orange-100{
     --text-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--text-opacity));
   }
 
@@ -95968,7 +95968,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:text-yellow-100{
     --text-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--text-opacity));
   }
 
@@ -96292,7 +96292,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:text-pink-100{
     --text-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--text-opacity));
   }
 
@@ -96360,7 +96360,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:text-white:hover{
     --text-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
@@ -96420,7 +96420,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:text-red-100:hover{
     --text-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--text-opacity));
   }
 
@@ -96474,7 +96474,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:text-orange-100:hover{
     --text-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--text-opacity));
   }
 
@@ -96528,7 +96528,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:text-yellow-100:hover{
     --text-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--text-opacity));
   }
 
@@ -96852,7 +96852,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:hover\:text-pink-100:hover{
     --text-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--text-opacity));
   }
 
@@ -96920,7 +96920,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:text-white:focus{
     --text-opacity: 1;
-    color: #fff;
+    color: #f3f3f3;
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
@@ -96980,7 +96980,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:text-red-100:focus{
     --text-opacity: 1;
-    color: #fff5f5;
+    color: #f3f3f35f5;
     color: rgba(255, 245, 245, var(--text-opacity));
   }
 
@@ -97034,7 +97034,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:text-orange-100:focus{
     --text-opacity: 1;
-    color: #fffaf0;
+    color: #f3f3f3af0;
     color: rgba(255, 250, 240, var(--text-opacity));
   }
 
@@ -97088,7 +97088,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:text-yellow-100:focus{
     --text-opacity: 1;
-    color: #fffff0;
+    color: #f3f3f3ff0;
     color: rgba(255, 255, 240, var(--text-opacity));
   }
 
@@ -97412,7 +97412,7 @@ div.code-toolbar .toolbar button:hover {
 
   .xl\:focus\:text-pink-100:focus{
     --text-opacity: 1;
-    color: #fff5f7;
+    color: #f3f3f35f7;
     color: rgba(255, 245, 247, var(--text-opacity));
   }
 

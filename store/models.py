@@ -21,7 +21,7 @@ class Purchase(models.Model):
     unit_price = models.DecimalField(max_digits=5, decimal_places=2)
     total = models.DecimalField(max_digits=5, decimal_places=2)
 
-class inventory(models.Model):
+class Inventory(models.Model):
     sku = models.ForeignKey(Purchase,on_delete=models.CASCADE)
     item_name = models.CharField(max_length=255)
     item_description = models.CharField(max_length=255)
