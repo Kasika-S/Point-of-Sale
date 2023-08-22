@@ -1,94 +1,129 @@
-{% extends 'base.html' %}
-{% block navigation %}
-    {% include 'nav.html' %}
-{% endblock %}
-{% block content %}
-{% load static %}i
-  <!-- strat content -->
-  <div class="bg-gray-100 flex-1 p-6 md:mt-16 grid grid-cols-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .form-container {
+            width: 40%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
 
-    <div class="col-span-12 bg-white border rounded p-6 mr-8">
+        .form-section {
+            margin-bottom: 20px;
+        }
 
-    <a href="#" class="btn-bs-dark uppercase tracking-wider">
-        <i class="fad fa-layer-plus mr-2"></i>
-        Known Operations: TODO
-    </a>
-    <hr class="my-6">
+        label {
+            display: block;
+            font-weight: bold;
+        }
 
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
 
-    </div>
-    <div class="col-span-12 p-4 mt-2 card flex flex-col">
+        /* Placeholder styling */
+        input[type="text"]::placeholder,
+        input[type="number"]::placeholder,
+        select::placeholder,
+        textarea::placeholder {
+            font-style: italic;
+            color: #aaa;
+        }
 
-    <div class="px-3 border-b">
-        <form action="" class="flex">
-            <input class="p-3 flex-1" type="text" placeholder="search">
-            <button type="submit" class="p-3">
-                <i class="fad fa-search"></i>
-            </button>
+        .submit-button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #0044a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form-section">
+                <label>Date (DD/MM/YYYY):</label>
+                <input type="date" required>
+            </div>
+
+            <div class="form-section">
+                <label>Purchase Order (MM/DD/#):</label>
+                <input type="text" placeholder="MM/DD/#" required>
+            </div>
+
+            <div class="form-section">
+                <label>Product SKU:</label>
+                <input type="text" placeholder="Product SKU" required>
+            </div>
+
+            <div class="form-section">
+                <label>Supplier:</label>
+                <input type="text" placeholder="Supplier" required>
+            </div>
+
+            <div class="form-section">
+                <label>Quantity:</label>
+                <input type="number" placeholder="Quantity" required>
+            </div>
+
+            <div class="form-section">
+                <label>Available Stock:</label>
+                <input type="number" placeholder="Available Stock" required>
+            </div>
+
+            <div class="form-section">
+                <label>Category:</label>
+                <input type="text" placeholder="Category" required>
+            </div>
+
+            <div class="form-section">
+                <label>Product Description:</label>
+                <textarea placeholder="Product description goes here" rows="4" required></textarea>
+            </div>
+
+            <div class="form-section">
+                <label>Discount (%):</label>
+                <input type="number" placeholder="Discount (%)" required>
+            </div>
+
+            <div class="form-section">
+                <label>Unit Price:</label>
+                <input type="number" placeholder="Unit Price" required>
+            </div>
+
+            <div class="form-section">
+                <label>Total Amount:</label>
+                <input type="number" placeholder="Total Amount" required>
+            </div>
+
+            <div class="form-section">
+                <label>Expiry Date:</label>
+                <input type="text" placeholder="Expiry Date">
+            </div>
+
+            <div class="form-section">
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
         </form>
     </div>
-
-    <div class="flex-1 flex flex-col">
-         <!-- start a table -->
-    <table class="table-fixed P-5 m-5">
-
-        <!-- table head -->
-        <thead class="text-left">
-            <tr>
-                <th class="w-1/2 pb-10 text-sm font-extrabold tracking-wide">Fullname</th>
-                <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-center">mail</th>
-                <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-left">update</th>
-                <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-left">delete</th>
-<!--                 <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-right">status</th> -->
-            </tr>
-        </thead>
-        <!-- end table head -->
-
-        <!-- table body -->
-        <tbody class="text-left text-gray-600">
-        {% for user in users %}
-            <!-- item -->
-            <tr>
-                <!-- name -->
-                <th class="w-1/2 mb-4 text-xs font-extrabold tracking-wider flex flex-row items-center w-full">
-                    <div class="w-8 h-8 overflow-hidden rounded-full">
-                        <img src="img/user2.jpg" class="object-cover">
-                    </div>
-                    <p class="ml-3 name-1">{{ user.firstname}} {{user.lastname }}</p>
-                </th>
-                <!-- name -->
-
-                <!-- mail -->
-                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left">{{ user.mail }}</th>
-                <!-- mail -->
-
-                <!-- update -->
-                <th class="w-1/4 mb-4 text-xs font-extrabold tracking-wider text-left"><span class="num-2 btn btn-success">update</span></th>
-                <!-- update -->
-
-                <!-- delete -->
-                <th class="w-1/4 mb-4 text-xs font-extrabold tracking-wider text-left"><span class="num-2 btn btn-danger">Delete</span></th>
-                <!-- delete -->
-
-            </tr>
-            {% endfor %}
-        </tbody>
-        <!-- end table body -->
-
-    </table>
-    <!-- end a table -->
-    </div>
-
-    <div class="card-footer flex justify-between">
-        <p>4.41 GB (25%) of 17 GB used Manage</p>
-        <p>Last account activity: 36 minutes ago</p>
-    </div>
-</div>
-
-  </div>
-  <!-- end content -->
-
-</div>
-<!-- end wrapper -->
-
-{% endblock %}
+</body>
+</html>
