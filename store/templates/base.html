@@ -7,6 +7,59 @@
   <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
   <title>Point of Sales</title>
+   <style>
+        .form-container {
+            width: 80%;
+            margin: 5 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid transparent;
+            border-radius: .04rem;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Placeholder styling */
+        input[type="text"]::placeholder,
+        input[type="number"]::placeholder,
+        select::placeholder,
+        textarea::placeholder {
+            font-style: italic;
+            color: #aaa;
+        }
+
+        .submit-button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #030303;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
 {% block navigation %}

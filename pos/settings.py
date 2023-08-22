@@ -87,13 +87,13 @@ DATABASES = {
         'NAME': 'store',
         'HOST': '127.0.0.1',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'password',
     }
 }
 
 
 # Password validation
-# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
+# https://docs.djangopoject.com/en/4.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {

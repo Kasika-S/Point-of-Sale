@@ -1,63 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .form-container {
-            width: 40%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
 
-        .form-section {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="number"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        /* Placeholder styling */
-        input[type="text"]::placeholder,
-        input[type="number"]::placeholder,
-        select::placeholder,
-        textarea::placeholder {
-            font-style: italic;
-            color: #aaa;
-        }
-
-        .submit-button {
-            background-color: blue;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .submit-button:hover {
-            background-color: #0044a3;
-        }
-    </style>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block navigation %}
+    {% include 'nav.html' %}
+{% endblock %}
+{% block content %}
+{% load static %}i
     <div class="form-container">
         <form>
             <div class="form-section">
@@ -127,3 +74,4 @@
     </div>
 </body>
 </html>
+{% endblock %}
