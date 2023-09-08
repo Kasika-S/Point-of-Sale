@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_protect
 from store.models import User, Inventory, Sale, Purchase
+
 # Create your views here.
 
 def store_main(request):
@@ -10,8 +12,10 @@ def store_dashboard(request):
     return render(request, 'index.html')
 
 def users(request):
-    return render(request, 'customers.html', {'users': User.objects.all()})
+    return render(request, 'users.html', {'users': User.objects.all() })
 
+def customers(request):
+    return render(request, 'customers.html', {'users': User.objects.all() })
 def purchases(request):
     return render(request, 'purchases.html', {'purchases':Purchase.objects.all()})
 

@@ -3,31 +3,41 @@
     {% include 'nav.html' %}
 {% endblock %}
 {% block content %}
-{% load static %}i
+{% load static %}
   <!-- strat content -->
   <div class="bg-gray-100 flex-1 p-6 md:mt-16 grid grid-cols-8"> 
     
-    <div class="col-span-2 bg-white border rounded p-6 mr-8">
+    <div class="col-span-3 bg-white border rounded p-6 mr-8">
 
-    <a href="#" class="btn-bs-secondary uppercase tracking-wider">
+    <span class="btn-bs-primary uppercase tracking-wider">
         <i class="fad fa-layer-plus mr-2"></i>
-        Create User
-    </a>
+        Create Customer
+    </span>
     <hr class="my-6">
-    <ul>
 
+    <form action="" class="f mt-2" method='post'>
+            {% csrf_token %}
+            <label for='firstname'>First Name </lable>
+            <input class="p-3 flex-2 mb-2" type="text" name='firstname' placeholder="First Name" id='firstname'>
+            <br>
 
+            <label for='lastname'>Last Name </lable>
+            <input class="p-3 flex-2 mb-2" type="text" name='lastname' placeholder="Last Name" id='lastname'>
+            <br>
+            <label for='phone'>Phone number </lable>
+            <input class="p-3 flex-2 mb-2" type="tel" name='phone' placeholder="Phone Number" id='+255 (674)(234567)'>
+            <br>
+              <label for='discount'>Discount </lable>
+            <input class="p-3 flex-2 mb-2" type="number" step='.01' name='discount' placeholder="0.04" id='discount'>
 
+            <input type='submit' name='create' value='Create' class='btn-bs-primary uppercase tracking-wider' style='width:100%'>
 
-
-        
-    </ul>
-
+        </form>
 </div>
-    <div class="col-span-6 card flex flex-col">
+    <div class="col-span-5 card flex flex-col">
 
     <div class="px-3 border-b">
-        <form action="" class="flex">
+        <form action="" class="flex mt-2">
             <input class="p-3 flex-1" type="text" placeholder="search">
             <button type="submit" class="p-3">
                 <i class="fad fa-search"></i>

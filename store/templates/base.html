@@ -71,6 +71,18 @@
 
 
 <!-- script -->
+<script>
+    function calculateTotal()
+    {
+        var unitPrice = parseFloat(document.getElementById('unit_price').value);
+        var discount = parseFloat(document.getElementById('discount').value);
+        var quantity = parseFloat(document.getElementById('quantity').value);
+        Discount = (unitPrice * discount);
+        var totalAmount = (unitPrice - Discount) * quantity;
+        document.getElementById('total').value = totalAmount.toFixed(2);
+    }
+    document.getElementById('unit_price').addEventListener('input', calculateTotal);
+</script>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script src="js/scripts.js"></script>
 <!-- end script -->
