@@ -56,3 +56,7 @@ class Customers(models.Model):
     lastname = models.CharField(max_length=255)
     phonenumber = models.CharField(max_length=10)
     discount = models.FloatField()
+    creditlimit = models.DecimalField(max_digits=5, decimal_places=1)
+    tinnumber = models.BigIntegerField()
+    vrnnumber = models.BigIntegerField()
+
