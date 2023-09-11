@@ -26,6 +26,7 @@ class Inventory(models.Model):
     sku = models.ForeignKey(Purchase,on_delete=models.CASCADE)
     item_name = models.CharField(max_length=255)
     item_description = models.CharField(max_length=255)
+    slug = models.SlugField(default='-')
     category = models.CharField(max_length=255)
     uom = models.CharField(max_length=255)
     reorder_point = models.BigIntegerField()
