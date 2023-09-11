@@ -17,19 +17,28 @@
 
     <form action="" class="f mt-2" method='post'>
             {% csrf_token %}
-            <label for='firstname'>First Name </lable>
+            <label for='firstname'>First Name </label>
             <input class="p-3 flex-2 mb-2" type="text" name='firstname' placeholder="First Name" id='firstname'>
             <br>
 
-            <label for='lastname'>Last Name </lable>
+            <label for='lastname'>Last Name </label>
             <input class="p-3 flex-2 mb-2" type="text" name='lastname' placeholder="Last Name" id='lastname'>
             <br>
-            <label for='phone'>Phone number </lable>
+            <label for='phone'>Phone number </label>
             <input class="p-3 flex-2 mb-2" type="tel" name='phone' placeholder="Phone Number" id='+255 (674)(234567)'>
             <br>
-              <label for='discount'>Discount </lable>
+            <label> for='discount'>Discount </label>
             <input class="p-3 flex-2 mb-2" type="number" step='.01' name='discount' placeholder="0.04" id='discount'>
 
+            <label for='Credit Limit'>Credit Limit </label>
+            <input class="p-3 flex-2 mb-2" type="number" name='CreditLimit' placeholder="Credit Limit" id='1,000,000'>
+            <br>
+            <label for='TinNumber'>TIN Number </label>
+            <input class="p-3 flex-2 mb-2" type="number" name='TinNumber' placeholder="TIN Number" id='123-456-789'>
+            <br>
+            <label for='VRNNumber'>VRN Number </label>
+            <input class="p-3 flex-2 mb-2" type="number" name='VrnNumber' placeholder="VRN Number" id='VrnNumber'>
+            <br>
             <input type='submit' name='create' value='Create' class='btn-bs-primary uppercase tracking-wider' style='width:100%'>
 
         </form>
@@ -55,7 +64,7 @@
         <thead class="text-left">
             <tr>
                 <th class="w-1/2 pb-10 text-sm font-extrabold tracking-wide">Fullname</th>
-                <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-center">mail</th>
+                <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-center">PhoneNumber</th>
                 <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-left">update</th>
                 <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-left">delete</th>
 <!--                 <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-right">status</th> -->
@@ -77,9 +86,9 @@
                 </th>
                 <!-- name -->
 
-                <!-- mail -->
-                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left">{{ user.mail }}</th>
-                <!-- mail -->
+                <!-- PhoneNumber -->
+                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left">{{ user.PhoneNumber }}</th>
+                <!-- PhoneNumber -->
 
                 <!-- update -->
                 <th class="w-1/4 mb-4 text-xs font-extrabold tracking-wider text-left"><span class="num-2 btn btn-success">update</span></th>
