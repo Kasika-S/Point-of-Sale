@@ -52,7 +52,7 @@ class Sale(models.Model):
     unit_price = models.DecimalField(max_digits=5, decimal_places=2)
     total_amount = models.DecimalField(max_digits=5, decimal_places=2)
 
-class Customers(models.Model):
+class Customer(models.Model):
     firstname = models.CharField(max_length=255)
     lastname = models.CharField(max_length=255)
     phonenumber = models.CharField(max_length=10)
