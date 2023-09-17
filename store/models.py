@@ -11,32 +11,45 @@ class User(models.Model):
 
 
 class Purchase(models.Model):
-    #TODO add category choices in day 9
     sku = models.CharField(max_length=255, primary_key=True)
     purchase_order = models.CharField(max_length=100)
     purchase_date = models.DateField(auto_now_add=True)
     supplier = models.CharField(max_length=255)
     quantity = models.BigIntegerField()
     unit_price = models.DecimalField(max_digits=8, decimal_places=1)
+    discount = models.DecimalField(max_digits=8, decimal_places=1, default=0.0)
     total = models.DecimalField(max_digits=8, decimal_places=1)
     expire_date = models.DateField()
 
 
 class Inventory(models.Model):
+    UNIT_CHOICES = [
+    ('pcs', 'Pieces'),
+    ('kg', 'Kilograms'),
+    ('m', 'Meters'),
+    ('L', 'Liters'),
+    ('lbs', 'Pounds'),
+    ('gal', 'Gallons'),
+    ]
+    CATEGORY_CHOICES = [
+        ('food', 'Food'),
+        ('beverage', 'Beverage'),
+        ('household', 'Household'),
+        ('other', 'Other'),
+    ]
     sku = models.ForeignKey(Purchase,on_delete=models.CASCADE)
     item_name = models.CharField(max_length=255)
     item_description = models.CharField(max_length=255)
     slug = models.SlugField(default='-')
-    category = models.CharField(max_length=255)
-    uom = models.CharField(max_length=255)
+    category = models.CharField(max_length=255, choices=CATEGORY_CHOICES, default='food')
+    uom = models.CharField(max_length=255,choices=UNIT_CHOICES,default='kg')
     reorder_point = models.BigIntegerField()
     total_purchases = models.DecimalField(max_digits=8,decimal_places=2)
-    total_sales = models.DecimalField(max_digits=8,decimal_places=2)
+    total_sales = models.DecimalField(max_digits=8,decimal_places=2,default=0.0)
     stock_available_main = models.BigIntegerField()
     stock_available_for_sale = models.BigIntegerField()
-    stock_available_value = models.DecimalField(max_digits=5, decimal_places=2)
-    a_s_value = models.DecimalField(max_digits=5, decimal_places=2)
-    best_selling_product = models.CharField(max_length=255)
+    stock_available_value = models.DecimalField(max_digits=8, decimal_places=2)
+    best_selling_product = models.BooleanField(default=False)
 
 class Reserved(models.Model):
     sku = models.ForeignKey(Purchase,on_delete=models.CASCADE)

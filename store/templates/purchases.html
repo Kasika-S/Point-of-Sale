@@ -1,4 +1,3 @@
-
 {% extends 'base.html' %}
 {% block navigation %}
     {% include 'nav.html' %}
@@ -6,65 +5,71 @@
 {% block content %}
 {% load static %}
     <div class="form-container">
-        <form>
+        <form method="POST" action='{% url "purchases" %}'>
+            {% csrf_token %}
             <div class="form-section">
-                <label>Date (DD/MM/YYYY):</label>
-                <input type="date" required>
+               <label>Purchase Order (MM/DD/#):</label>
+               {{ purchase_form.purchase_order }}
             </div>
-
             <div class="form-section">
-                <label>Purchase Order (MM/DD/#):</label>
-                <input type="text" placeholder="MM/DD/#" required>
+            {{ purchase_form.sku.label_tag }}
+            {{ purchase_form.sku }}
             </div>
-
             <div class="form-section">
-                <label>Product SKU:</label>
-                <input type="text" placeholder="Product SKU" required>
+                {{ inventory_form.item_name.label_tag }}
+               {{ inventory_form.item_name }}
             </div>
-
             <div class="form-section">
-                <label>Supplier:</label>
-                <input type="text" placeholder="Supplier" required>
+              {{ purchase_form.supplier.label_tag }}
+               {{ purchase_form.supplier }}
             </div>
-
+             <div class="form-section">
+               {{ inventory_form.uom.label_tag }}
+                {{ inventory_form.uom}}
+               </div>
             <div class="form-section">
                 <label>Quantity:</label>
-                <input type="number" placeholder="Quantity" required>
+                <input type="number" name='quantity' id='quantity' placeholder="Quantity" required>
             </div>
 
             <div class="form-section">
-                <label>Available Stock:</label>
-                <input type="number" placeholder="Available Stock" required>
+                {{ inventory_form.reorder_point.label_tag }}
+                {{ inventory_form.reorder_point }}
+            </div>
+            <div class="form-section">
+                {{ inventory_form.stock_available_main.label_tag }}
+                <input type="number" name='stock_available_main' placeholder="Available Stock" required>
             </div>
 
             <div class="form-section">
-                <label>Category:</label>
-                <input type="text" placeholder="Category" required>
+                {{ inventory_form.category.label_tag }}
+                {{ inventory_form.category}}
             </div>
 
             <div class="form-section">
-                <label>Product Description:</label>
-                <textarea placeholder="Product description goes here" rows="4" required></textarea>
+               {{ inventory_form.item_description.label_tag }}
+               <textarea name='item_description'>
+               </textarea>
+            </div>
+             <div class="form-section">
+                {{ purchase_form.discount.label_tag }}
+                <input type="number" step='.01' name='discount' id='discount' placeholder="Unit Price" required>
             </div>
 
             <div class="form-section">
-                <label>Discount (%):</label>
-                <input type="number" placeholder="Discount (%)" required>
+                {{ purchase_form.unit_price.label_tag }}
+                <input type="number" step='.01' name='unit_price' id='unit_price' placeholder="Unit Price" required>
             </div>
 
             <div class="form-section">
-                <label>Unit Price:</label>
-                <input type="number" placeholder="Unit Price" required>
+            {{ purchase_form.total.label_tag }}
+                <input type="number" name='total' id='total' placeholder="Total Amount" required>
             </div>
 
             <div class="form-section">
-                <label>Total Amount:</label>
-                <input type="number" placeholder="Total Amount" required>
-            </div>
+            {{ purchase_form.expire_date.label_tag }}
+             <input type="date" name='expire_date' >
 
-            <div class="form-section">
-                <label>Expiry Date:</label>
-                <input type="text" placeholder="Expiry Date">
             </div>
 
             <div class="form-section">
