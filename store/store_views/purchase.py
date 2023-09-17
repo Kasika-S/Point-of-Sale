@@ -16,8 +16,14 @@ class PurchaseBoard(View):
     def post(self, request):
         purchase_form = PurchaseForm(request.POST)
         inventory_form = InventoryForm(request.POST)
+
+        print("Purchase Form Data:", purchase_form.cleaned_data)
+        print("Inventory Form Data:", inventory_form.cleaned_data)
+
         if purchase_form.is_valid() and inventory_form.is_valid():
-            purchase_felds = {
+            print("Purchase Form Errors:", purchase_form.errors)
+            print("Inventory Form Errors:", inventory_form.errors)
+            purchase_fields = {
                 'sku': purchase_form.cleaned_data['sku'],
                 'purchase_order': purchase_form.cleaned_data['purchase_order'],
                 'purchase_date': purchase_form.cleaned_data['purchase_date'],
@@ -28,7 +34,7 @@ class PurchaseBoard(View):
                 'total': purchase_form.cleaned_data['total'],
                 'expire_date': purchase_form.cleaned_data['expire_date'],
             }
-            inventory_felds = {
+            inventory_fields = {
                 'sku': inventory_form.cleaned_data['sku'],
                 'item_name': inventory_form.cleaned_data['item_name'],
                 'item_description': inventory_form.cleaned_data['item_description'],
@@ -38,10 +44,11 @@ class PurchaseBoard(View):
                 'total_purchases': inventory_form.cleaned_data['total'],
                 'stock_available_main': inventory_form.cleaned_data['stock_available_main'],
                 'stock_available_for_sale': inventory_form.cleaned_data['stock_available_main'],
-                'stock_available_value': inventory_form.cleaned_data['stock_available_main'] * purchase_form.cleaned_data['unit_price'],
+                'stock_available_value': purchase_form.cleaned_data['quality'] * purchase_form.cleaned_data['unit_price'] if (inventory_form.cleaned_data['stock_available_main'] == 0) else purchase_form.cleaned_data['unit_price'] * inventory_form.cleaned_data['stock_available_main'],
+
             }
-            purchase = Purchase(**purchase_felds)
-            inventory = Inventory(**inventory_felds)
+            Purchase.objects.create(**purchase_fields)
+            Inventory.objects.create(**inventory_fields)
             Purchase.save()
             Inventory.save()
             return redirect('purchases')

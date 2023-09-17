@@ -16,27 +16,27 @@
     <hr class="my-6">
     <form action="" class="f mt-2">
             {% csrf_token %}
-            <label for='sale_order'>Sale Order </lable>
-            <input class="p-3 flex-2 mb-2" type="text" name='sale_order' placeholder="Sale Order" id='sale_order'>
+            {{ sale_form.sale_order.label_tag }}
+            {{ sale_form.sale_order }}
             <br>
 
             <label for='sale_date'>Sale Date </lable>
             <input class="p-3 flex-2 mb-2" type="date" name='sale_date' placeholder="" id='sale_date'>
             <br>
-            <label for='sku'>Stock keeping Unit </lable>
-            <input class="p-3 flex-2 mb-2" type="text" name='sku' placeholder="XYZ12345" id='sku'>
+             {{ sale_form.sku.label_tag }}
+            {{ sale_form.sku }}
             <br>
-            <label for='quantity'>quantity</label>
+              {{ sale_form.quantity.label_tag }}
             <input class="p-3 flex-2 mb-2" type="number" name='qantity' placeholder="" id='quantity'>
             <br>
-            <label for='discount'>Discount</label>
+              {{ sale_form.discount.label_tag }}
             <input class="p-3 flex-2 mb-2" type="number" step='.01' name='discount' placeholder="" id='discount'>
             <br>
-            <label for='unit_price'>Unit Price</label>
+               {{ sale_form.unit_price.label_tag }}
             <input class="p-3 flex-2 mb-2" type="number" step='.01' name='unit_price' placeholder="" id='unit_price'>
             <br>
-            <label for='total'>Total Amount</label>
-            <input class="p-3 flex-2 mb-2" type="number" step='.01' name='total' placeholder="" id='total'>
+               {{ sale_form.total_amount.label_tag }}
+            <input class="p-3 flex-2 mb-2" type="number" step='.01' name='total_amount' placeholder="" id='total'>
 
             <input type='submit' name='create' value='Create' class='btn-bs-primary uppercase tracking-wider' style='width:100%'>
 
