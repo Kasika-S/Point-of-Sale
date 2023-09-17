@@ -46,11 +46,17 @@ class Inventory(models.Model):
     reorder_point = models.BigIntegerField()
     total_purchases = models.DecimalField(max_digits=8,decimal_places=2)
     total_sales = models.DecimalField(max_digits=8,decimal_places=2,default=0.0)
-    stock_available_main = models.BigIntegerField()
+    stock_available_main = models.BigIntegerField(default=0)
     stock_available_for_sale = models.BigIntegerField()
     stock_available_value = models.DecimalField(max_digits=8, decimal_places=2)
     best_selling_product = models.BooleanField(default=False)
+    
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.item_name)
+        if self.stock_available_main == 0:
+            self.stock_available_for_sale = 0
 
+        super(Inventory, self).save(*args, **kwargs)
 class Reserved(models.Model):
     sku = models.ForeignKey(Purchase,on_delete=models.CASCADE)
     quantity = models.BigIntegerField()

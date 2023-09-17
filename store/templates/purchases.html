@@ -28,8 +28,8 @@
                 {{ inventory_form.uom}}
                </div>
             <div class="form-section">
-                <label>Quantity:</label>
-                <input type="number" name='quantity' id='quantity' placeholder="Quantity" required>
+                {{ purchase_form.quantity.label_tag }}
+                {{ purchase_form.quantity }}
             </div>
 
             <div class="form-section">
@@ -53,22 +53,22 @@
             </div>
              <div class="form-section">
                 {{ purchase_form.discount.label_tag }}
-                <input type="number" step='.01' name='discount' id='discount' placeholder="Unit Price" required>
+                {{ purchase_form.discount }}
             </div>
 
             <div class="form-section">
                 {{ purchase_form.unit_price.label_tag }}
-                <input type="number" step='.01' name='unit_price' id='unit_price' placeholder="Unit Price" required>
+                {{ purchase_form.unit_price }}
             </div>
 
             <div class="form-section">
             {{ purchase_form.total.label_tag }}
-                <input type="number" name='total' id='total' placeholder="Total Amount" required>
+            {{ purchase_form.total }}
             </div>
 
             <div class="form-section">
             {{ purchase_form.expire_date.label_tag }}
-             <input type="date" name='expire_date' >
+            {{ purchase_form.expire_date }}
 
             </div>
 

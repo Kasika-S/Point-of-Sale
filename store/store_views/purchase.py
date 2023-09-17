@@ -17,12 +17,7 @@ class PurchaseBoard(View):
         purchase_form = PurchaseForm(request.POST)
         inventory_form = InventoryForm(request.POST)
 
-        print("Purchase Form Data:", purchase_form.cleaned_data)
-        print("Inventory Form Data:", inventory_form.cleaned_data)
-
         if purchase_form.is_valid() and inventory_form.is_valid():
-            print("Purchase Form Errors:", purchase_form.errors)
-            print("Inventory Form Errors:", inventory_form.errors)
             purchase_fields = {
                 'sku': purchase_form.cleaned_data['sku'],
                 'purchase_order': purchase_form.cleaned_data['purchase_order'],
@@ -52,5 +47,6 @@ class PurchaseBoard(View):
             Purchase.save()
             Inventory.save()
             return redirect('purchases')
+
         return render(request, self.template_name, {'purchase_form':purchase_form,'inventory_form':inventory_form})
 

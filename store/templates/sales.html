@@ -14,30 +14,28 @@
         New Sale
     </a>
     <hr class="my-6">
-    <form action="" class="f mt-2">
+    <form action="{% url 'sales' %}" class="f mt-2">
             {% csrf_token %}
             {{ sale_form.sale_order.label_tag }}
             {{ sale_form.sale_order }}
             <br>
 
-            <label for='sale_date'>Sale Date </lable>
-            <input class="p-3 flex-2 mb-2" type="date" name='sale_date' placeholder="" id='sale_date'>
-            <br>
+
              {{ sale_form.sku.label_tag }}
             {{ sale_form.sku }}
             <br>
               {{ sale_form.quantity.label_tag }}
-            <input class="p-3 flex-2 mb-2" type="number" name='qantity' placeholder="" id='quantity'>
+              {{ sale_form.quantity }}
             <br>
               {{ sale_form.discount.label_tag }}
-            <input class="p-3 flex-2 mb-2" type="number" step='.01' name='discount' placeholder="" id='discount'>
+              {{ sale_form.discount }}
             <br>
                {{ sale_form.unit_price.label_tag }}
-            <input class="p-3 flex-2 mb-2" type="number" step='.01' name='unit_price' placeholder="" id='unit_price'>
+               {{ sale_form.unit_price }}
             <br>
                {{ sale_form.total_amount.label_tag }}
-            <input class="p-3 flex-2 mb-2" type="number" step='.01' name='total_amount' placeholder="" id='total'>
-
+               {{ sale_form.total_amount }}
+            <br><br>
             <input type='submit' name='create' value='Create' class='btn-bs-primary uppercase tracking-wider' style='width:100%'>
 
     </form>
