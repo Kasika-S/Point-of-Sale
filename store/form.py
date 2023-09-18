@@ -20,6 +20,9 @@ class InventoryForm(ModelForm):
     class Meta:
         model = Inventory
         exclude = ['total_sales','best_selling_product']
+        widgets = {
+            'sku': forms.TextInput(attrs={'id': 'inv_sku_id'}),
+        }
 class ReservedForm(forms.ModelForm):
     class Meta:
         model = Reserved
@@ -30,7 +33,6 @@ class SaleForm(ModelForm):
         model = Sale
         exclude = ['sale_date']
         widgets = {
-            'sku': forms.TextInput(attrs={'id': 'inv_sku_id'}),
             'quantity': forms.NumberInput(attrs={'id': 'quantity'}),
             'discount': forms.NumberInput(attrs={'id': 'discount', 'step': '.01'}),
             'unit_price': forms.NumberInput(attrs={'id': 'unit_price', 'step': '.01'}),

@@ -14,7 +14,7 @@ class PurchaseBoard(View):
         purchase_form = PurchaseForm(request.POST)
         inventory_form = InventoryForm(request.POST)
         if(purchase_form.is_valid()):
-            purchase_instance = purchase_form.save(commit=False)
+            purchase_instance = purchase_form.save(commit=True)
             if inventory_form.is_valid():
                 inventory_instance = inventory_form.save(commit=False)
                 inventory_instance.sku = purchase_instance.sku

@@ -57,6 +57,7 @@
                 <legend>Inventory</legend>
 
                 <form action='{% url "inventory" %}' method='POST'>
+                {% csrf_token %}
                     <div class='form-section'>
                         {{ inventory_form.sku.label_tag}}
                         {{ inventory_form.sku }}
