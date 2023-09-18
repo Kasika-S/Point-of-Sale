@@ -82,6 +82,17 @@
         document.getElementById('total').value = totalAmount.toFixed(2);
     }
     document.getElementById('unit_price').addEventListener('input', calculateTotal);
+    document.addEventListener('DOMContentLoaded', function(){
+        var purchase_sku = document.getElementById('sku_id');
+        var inventory_sku = document.getElementById('inv_sku_id');
+
+        if(purchase_sku && inventory_sku)
+        {
+            purchase_sku.addEventListener('change', function(){
+                inventory_sku.value = purchase_sku.value;
+            })
+        }
+    });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script src="js/scripts.js"></script>

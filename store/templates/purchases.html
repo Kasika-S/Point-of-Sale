@@ -5,6 +5,8 @@
 {% block content %}
 {% load static %}
     <div class="form-container">
+    <fieldset style='border: 2px solid black; border-radius: .5rem;padding: 1rem'>
+    <legend>Purchase</legend>
         <form method="POST" action='{% url "purchases" %}'>
             {% csrf_token %}
             <div class="form-section">
@@ -15,42 +17,16 @@
             {{ purchase_form.sku.label_tag }}
             {{ purchase_form.sku }}
             </div>
-            <div class="form-section">
-                {{ inventory_form.item_name.label_tag }}
-               {{ inventory_form.item_name }}
-            </div>
+
             <div class="form-section">
               {{ purchase_form.supplier.label_tag }}
                {{ purchase_form.supplier }}
             </div>
-             <div class="form-section">
-               {{ inventory_form.uom.label_tag }}
-                {{ inventory_form.uom}}
-               </div>
             <div class="form-section">
                 {{ purchase_form.quantity.label_tag }}
                 {{ purchase_form.quantity }}
             </div>
 
-            <div class="form-section">
-                {{ inventory_form.reorder_point.label_tag }}
-                {{ inventory_form.reorder_point }}
-            </div>
-            <div class="form-section">
-                {{ inventory_form.stock_available_main.label_tag }}
-                <input type="number" name='stock_available_main' placeholder="Available Stock" required>
-            </div>
-
-            <div class="form-section">
-                {{ inventory_form.category.label_tag }}
-                {{ inventory_form.category}}
-            </div>
-
-            <div class="form-section">
-               {{ inventory_form.item_description.label_tag }}
-               <textarea name='item_description'>
-               </textarea>
-            </div>
              <div class="form-section">
                 {{ purchase_form.discount.label_tag }}
                 {{ purchase_form.discount }}
@@ -71,11 +47,53 @@
             {{ purchase_form.expire_date }}
 
             </div>
-
-            <div class="form-section">
+             <div class="form-section">
                 <button type="submit" class="submit-button">Submit</button>
             </div>
-        </form>
+            </form>
+            </fieldset>
+            {% if purchase_form.is_bound %}
+            <fieldset style='border: 2px solid black; border-radius: .5rem;padding: 1rem'>
+                <legend>Inventory</legend>
+
+                <form action='{% url "inventory" %}' method='POST'>
+                    <div class='form-section'>
+                        {{ inventory_form.sku.label_tag}}
+                        {{ inventory_form.sku }}
+                    </div>
+                    <div class="form-section">
+                        {{ inventory_form.item_name.label_tag }}
+                        {{ inventory_form.item_name }}
+                    </div>
+                    <div class="form-section">
+                        {{ inventory_form.item_description.label_tag }}
+                        {{ inventory_form.item_description }}
+                    </div>
+                    <div class="form-section">
+                        {{ inventory_form.uom.label_tag }}
+                        {{ inventory_form.uom}}
+                        </div>
+
+                    <div class="form-section">
+                        {{ inventory_form.reorder_point.label_tag }}
+                        {{ inventory_form.reorder_point }}
+                    </div>
+                    <div class="form-section">
+                        {{ inventory_form.stock_available_main.label_tag }}
+                        {{ inventory_form.stock_available_main }}
+                    </div>
+
+                    <div class="form-section">
+                        {{ inventory_form.category.label_tag }}
+                        {{ inventory_form.category}}
+                    </div>
+
+                        <div class="form-section">
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </fieldset>
+         {% endif %}
     </div>
 </body>
 </html>

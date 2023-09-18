@@ -104,7 +104,16 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+ fieldset {
+    border: 2px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
 
+  legend {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
 code,
 kbd,
 samp {
