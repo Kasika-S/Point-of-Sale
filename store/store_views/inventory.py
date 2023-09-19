@@ -1,12 +1,12 @@
 from django.views import View
 from django.shortcuts import render
-from store.models import Inventory
-from store.form import InventoryForm
+from store.models import Inventory, Purchase
 
 class InventoryBoard(View):
     template_name = 'inventory.html'
     contexts = {}
     def get(self, request):
+        self.contexts['purchase'] = Purchase.objects.all()
         self.contexts['inventory'] = Inventory.objects.all()
         return render(request, 'inventory.html', {**self.contexts})
 

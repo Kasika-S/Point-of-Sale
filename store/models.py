@@ -27,21 +27,6 @@ class User(models.Model):
 
 
 class Purchase(models.Model):
-    sku = models.CharField(max_length=255, primary_key=True)
-    purchase_order = models.CharField(max_length=100)
-    purchase_date = models.DateField(auto_now_add=True)
-    supplier = models.CharField(max_length=255)
-    quantity = models.BigIntegerField()
-    unit_price = models.DecimalField(max_digits=10, decimal_places=3)
-    discount = models.DecimalField(max_digits=10, decimal_places=3, default=0.0)
-    total = models.DecimalField(max_digits=10, decimal_places=3)
-    expire_date = models.DateField()
-
-    def __str__(self):
-        return self.sku
-
-
-class Inventory(models.Model):
     UNIT_CHOICES = [
     ('pcs', 'Pieces'),
     ('kg', 'Kilograms'),
@@ -56,13 +41,27 @@ class Inventory(models.Model):
         ('household', 'Household'),
         ('other', 'Other'),
     ]
-    sku = models.ForeignKey(Purchase,on_delete=models.CASCADE)
+    sku = models.CharField(max_length=255, primary_key=True)
+    purchase_order = models.CharField(max_length=100)
+    purchase_date = models.DateField(auto_now_add=True) # Default
     item_name = models.CharField(max_length=255)
     item_description = models.CharField(max_length=255)
-    slug = models.SlugField(default='-')
-    category = models.CharField(max_length=255, choices=CATEGORY_CHOICES, default='food')
+    slug = models.SlugField(default='-') # Default
+    category = models.CharField(max_length=255,choices=CATEGORY_CHOICES,default='other')
     uom = models.CharField(max_length=255,choices=UNIT_CHOICES,default='kg')
-    reorder_point = models.BigIntegerField()
+    supplier = models.CharField(max_length=255)
+    quantity = models.BigIntegerField()
+    unit_price = models.DecimalField(max_digits=10, decimal_places=3)
+    discount = models.DecimalField(max_digits=10, decimal_places=3, default=0.0)
+    total = models.DecimalField(max_digits=10, decimal_places=3)
+    expire_date = models.DateField()
+
+    def __str__(self):
+        return self.sku
+
+class Inventory(models.Model):
+    sku = models.ForeignKey(Purchase,on_delete=models.CASCADE)
+    reorder_point = models.BigIntegerField(default=50)
     total_purchases = models.DecimalField(max_digits=10,decimal_places=3, default=0.0)
     total_sales = models.DecimalField(max_digits=10,decimal_places=3,default=0.0)
     stock_available_main = models.BigIntegerField(default=0)

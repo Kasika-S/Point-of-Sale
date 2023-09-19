@@ -1,4 +1,4 @@
-    7         widgets = { 
+from django.forms import ModelForm 
 from django.contrib.auth.hashers import make_password
 from django.core.validators import RegexValidator
 from django import forms
@@ -8,7 +8,7 @@ from .models import *
 class PurchaseForm(ModelForm):
     class Meta:
         model = Purchase
-        exclude = ['purchase_date']
+        exclude = ['purchase_date','slug']
         widgets = {
             'sku': forms.TextInput(attrs={'id': 'sku_id'}),
             'quantity': forms.NumberInput(attrs={'id': 'quantity'}),
@@ -18,13 +18,6 @@ class PurchaseForm(ModelForm):
             'expire_date': forms.DateInput(attrs={'id': 'expire_date', 'type': 'date'}),
         }
 
-class InventoryForm(ModelForm):
-    class Meta:
-        model = Inventory
-        exclude = ['total_sales','total_purchases','best_selling_product','slug','stock_available_value','stock_available_for_sale']
-        widgets = {
-            'sku': forms.TextInput(attrs={'id': 'inv_sku_id'}),
-        }
 class ReservedForm(forms.ModelForm):
     class Meta:
         model = Reserved

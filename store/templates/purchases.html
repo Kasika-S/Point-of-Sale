@@ -4,9 +4,14 @@
 {% endblock %}
 {% block content %}
 {% load static %}
-    <div class="form-container">
+<div class="bg-gray-100 flex-1 p-6 md:mt-16 grid grid-cols-8">
+
+    <div class="col-span-3 bg-white border rounded p-6 mr-8">
     <fieldset style='border: 2px solid black; border-radius: .5rem;padding: 1rem'>
     <legend>Purchase</legend>
+      <div class="form-section">
+            <button class="submit-button" style='display:block; float:right;margin-bottom:2rem'>ScanBarCode</button>
+        </div>
         <form method="POST" action='{% url "create_purchase" %}'>
             {% csrf_token %}
             <div class="form-section">
@@ -17,12 +22,33 @@
             {{ purchase_form.sku.label_tag }}
             {{ purchase_form.sku }}
             </div>
-
+             <div class="form-section">
+                {{ purchase_form.item_name.label_tag }}
+                {{ purchase_form.item_name }}
+            </div>
             <div class="form-section">
               {{ purchase_form.supplier.label_tag }}
                {{ purchase_form.supplier }}
             </div>
             <div class="form-section">
+                {{ purchase_form.item_description.label_tag }}
+                {{ purchase_form.item_description }}
+            </div>
+            <div class="form-section">
+                {{ purchase_form.category.label_tag }}
+                {{ purchase_form.category}}
+            </div>
+            <div class="form-section">
+                {{ purchase_form.uom.label_tag }}
+                {{ purchase_form.uom}}
+            </div>
+            </fieldset>
+            </div>
+            <div class="col-span-5 card flex flex-col p-5">
+            <fieldset style='border: 2px solid black; border-radius: .5rem;padding: 1rem'>
+                <legend>Purchase</legend>
+
+             <div class="form-section">
                 {{ purchase_form.quantity.label_tag }}
                 {{ purchase_form.quantity }}
             </div>
@@ -43,56 +69,19 @@
             </div>
 
             <div class="form-section">
-            {{ purchase_form.expire_date.label_tag }}
-            {{ purchase_form.expire_date }}
+                {{ purchase_form.expire_date.label_tag }}
+                {{ purchase_form.expire_date }}
 
             </div>
-             <div class="form-section">
-                <button type="submit" class="submit-button">Submit</button>
-            </div>
-            </form>
-            </fieldset>
-            <fieldset style='border: 2px solid black; border-radius: .5rem;padding: 1rem'>
-                <legend>Inventory</legend>
 
-                <form action='{% url "create_inventory" %}' method='POST'>
-                {% csrf_token %}
-                    <div class='form-section'>
-                        {{ inventory_form.sku.label_tag}}
-                        {{ inventory_form.sku }}
-                    </div>
-                    <div class="form-section">
-                        {{ inventory_form.item_name.label_tag }}
-                        {{ inventory_form.item_name }}
-                    </div>
-                    <div class="form-section">
-                        {{ inventory_form.item_description.label_tag }}
-                        {{ inventory_form.item_description }}
-                    </div>
-                    <div class="form-section">
-                        {{ inventory_form.uom.label_tag }}
-                        {{ inventory_form.uom}}
-                        </div>
-
-                    <div class="form-section">
-                        {{ inventory_form.reorder_point.label_tag }}
-                        {{ inventory_form.reorder_point }}
-                    </div>
-                    <div class="form-section">
-                        {{ inventory_form.stock_available_main.label_tag }}
-                        {{ inventory_form.stock_available_main }}
-                    </div>
-
-                    <div class="form-section">
-                        {{ inventory_form.category.label_tag }}
-                        {{ inventory_form.category}}
-                    </div>
 
                         <div class="form-section">
                         <button type="submit" class="submit-button">Submit</button>
                     </div>
                 </form>
             </fieldset>
+            </div>
+            </div>
     </div>
 </body>
 </html>
