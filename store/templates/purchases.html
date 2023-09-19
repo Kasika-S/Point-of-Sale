@@ -56,7 +56,7 @@
             <fieldset style='border: 2px solid black; border-radius: .5rem;padding: 1rem'>
                 <legend>Inventory</legend>
 
-                <form action='{% url "inventory" %}' method='POST'>
+                <form action='{% url "purchases" %}' method='POST'>
                 {% csrf_token %}
                     <div class='form-section'>
                         {{ inventory_form.sku.label_tag}}

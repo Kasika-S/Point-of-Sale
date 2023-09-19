@@ -14,12 +14,11 @@ class PurchaseBoard(View):
         purchase_form = PurchaseForm(request.POST)
         inventory_form = InventoryForm(request.POST)
         if(purchase_form.is_valid()):
-            purchase_instance = purchase_form.save(commit=True)
+            purchase_instance = purchase_form.save(commit=False)
             if inventory_form.is_valid():
                 inventory_instance = inventory_form.save(commit=False)
-                inventory_instance.sku = purchase_instance.sku
+                purchase_instance.save()
                 inventory_instance.save()
-            purchase_instance.save()
-            return redirect('purchases')
+            return redirect('inventory')
         return render(request, self.template_name, {'purchase_form': purchase_form, 'inventory_form': inventory_form })
 

@@ -1,5 +1,9 @@
 from django.db import models
+import uuid
 
+# unique token
+def generate_unique_token():
+    return str(uuid.uuid4())
 
 class User(models.Model):
     username = models.CharField(max_length=100)
@@ -7,7 +11,10 @@ class User(models.Model):
     lastname = models.CharField(max_length=255)
     password = models.CharField(max_length=255)
     mail = models.CharField(max_length=255)
-    recoveryToken = models.CharField(max_length=100)
+    recoveryToken = models.CharField(max_length=100,default=generate_unique_token, unique=True)
+
+    def __str__(self):
+        return self.username + " " + self.lastname
 
 
 class Purchase(models.Model):
@@ -20,6 +27,9 @@ class Purchase(models.Model):
     discount = models.DecimalField(max_digits=8, decimal_places=1, default=0.0)
     total = models.DecimalField(max_digits=8, decimal_places=1)
     expire_date = models.DateField()
+
+    def __str__(self):
+        return self.sku
 
 
 class Inventory(models.Model):
@@ -44,11 +54,11 @@ class Inventory(models.Model):
     category = models.CharField(max_length=255, choices=CATEGORY_CHOICES, default='food')
     uom = models.CharField(max_length=255,choices=UNIT_CHOICES,default='kg')
     reorder_point = models.BigIntegerField()
-    total_purchases = models.DecimalField(max_digits=8,decimal_places=2)
+    total_purchases = models.DecimalField(max_digits=8,decimal_places=2, default=0.0)
     total_sales = models.DecimalField(max_digits=8,decimal_places=2,default=0.0)
     stock_available_main = models.BigIntegerField(default=0)
     stock_available_for_sale = models.BigIntegerField(default=0)
-    stock_available_value = models.DecimalField(max_digits=8, decimal_places=2)
+    stock_available_value = models.DecimalField(max_digits=8, decimal_places=2, default=0.0)
     best_selling_product = models.BooleanField(default=False)
 
 
