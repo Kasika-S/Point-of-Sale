@@ -15,5 +15,7 @@ class UserBoard(View):
         if self.contexts['form'].is_valid():
             self.contexts['form'].save()
             return redirect('users')
+        else:
+            print(self.contexts['form'].errors)
         return render(request, 'users.html', {**self.contexts })
 

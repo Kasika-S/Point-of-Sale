@@ -1,4 +1,4 @@
-from django.forms import ModelForm
+from django.forms import ModelForm 
 from django.contrib.auth.hashers import make_password
 from django import forms
 from .models import *
@@ -48,12 +48,14 @@ class CustomerForm(ModelForm):
 class UserForm(ModelForm):
     class Meta:
         model = User
-        exclude = ['recoveryToken']
+        exclude = ['recoveryToken','created_at']
         widgets = {
             'password': forms.PasswordInput(attrs={
                 'type':'password',
                 'style': 'width: 100%;height:2.5rem;border-radius: 5px;border: 1px solid #ced4da;padding: 0.375rem 0.75rem;',
-            })
+            }),
+            'mail': forms.EmailInput(attrs={'style': 'width: 100%;height:2.5rem;border-radius: 5px;border: 1px solid #ced4da;padding: 0.375rem 0.75rem;','type':'email'}),
+            'user_role': forms.Select(attrs={'style': 'width: 100%;height:2.5rem;border-radius: 5px;border: 1px solid #ced4da;padding: 0.375rem 0.75rem;'}),
         }
     def save(self, commit=True):
         password = self.cleaned_data.get('password')

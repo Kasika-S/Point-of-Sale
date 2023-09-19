@@ -1,4 +1,4 @@
-   69 </div> 
+{% extends 'base.html' %}
 {% block navigation %}
     {% include 'nav.html' %}
 {% endblock %}
@@ -31,6 +31,8 @@
             {{ form.mail.label_tag }}
             {{ form.mail }}
             <br>
+            {{ form.user_role.label_tag }}
+            {{ form.user_role }} 
             <input type='submit' name='create' value='Create' class='btn-bs-primary uppercase tracking-wider' style='width:100%;margin-top:.5rem'>
 
     </form>

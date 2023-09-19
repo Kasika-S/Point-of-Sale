@@ -1,4 +1,5 @@
-from django.db import models
+from django.db import models 
+from django.utils import timezone
 import uuid
 
 # unique token
@@ -6,12 +7,20 @@ def generate_unique_token():
     return str(uuid.uuid4())
 
 class User(models.Model):
+    ADMIN = '1'
+    WORKER = '2'
+    ROLE_CHOICES = [
+        (ADMIN, 'Admin'),
+        (WORKER, 'Worker'),
+    ]
     username = models.CharField(max_length=100)
     firstname = models.CharField(max_length=255)
     lastname = models.CharField(max_length=255)
     password = models.CharField(max_length=255)
     mail = models.CharField(max_length=255)
     recoveryToken = models.CharField(max_length=100,default=generate_unique_token, unique=True)
+    user_role = models.CharField(max_length=255, choices=ROLE_CHOICES,default=WORKER)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.username + " " + self.lastname
@@ -84,4 +93,5 @@ class Customer(models.Model):
     creditlimit = models.DecimalField(max_digits=5, decimal_places=1)
     tinnumber = models.BigIntegerField()
     vrnnumber = models.BigIntegerField()
+    created_at = models.DateTimeField(auto_now_add=True)
 
