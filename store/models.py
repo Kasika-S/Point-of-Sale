@@ -1,4 +1,4 @@
-from django.db import models
+from django.db import models 
 from django.utils import timezone
 import uuid
 
@@ -32,9 +32,9 @@ class Purchase(models.Model):
     purchase_date = models.DateField(auto_now_add=True)
     supplier = models.CharField(max_length=255)
     quantity = models.BigIntegerField()
-    unit_price = models.DecimalField(max_digits=8, decimal_places=1)
-    discount = models.DecimalField(max_digits=8, decimal_places=1, default=0.0)
-    total = models.DecimalField(max_digits=8, decimal_places=1)
+    unit_price = models.DecimalField(max_digits=10, decimal_places=3)
+    discount = models.DecimalField(max_digits=10, decimal_places=3, default=0.0)
+    total = models.DecimalField(max_digits=10, decimal_places=3)
     expire_date = models.DateField()
 
     def __str__(self):
@@ -63,11 +63,11 @@ class Inventory(models.Model):
     category = models.CharField(max_length=255, choices=CATEGORY_CHOICES, default='food')
     uom = models.CharField(max_length=255,choices=UNIT_CHOICES,default='kg')
     reorder_point = models.BigIntegerField()
-    total_purchases = models.DecimalField(max_digits=8,decimal_places=2, default=0.0)
-    total_sales = models.DecimalField(max_digits=8,decimal_places=2,default=0.0)
+    total_purchases = models.DecimalField(max_digits=10,decimal_places=3, default=0.0)
+    total_sales = models.DecimalField(max_digits=10,decimal_places=3,default=0.0)
     stock_available_main = models.BigIntegerField(default=0)
     stock_available_for_sale = models.BigIntegerField(default=0)
-    stock_available_value = models.DecimalField(max_digits=8, decimal_places=2, default=0.0)
+    stock_available_value = models.DecimalField(max_digits=10, decimal_places=3, default=0.0)
     best_selling_product = models.BooleanField(default=False)
 
 
@@ -82,15 +82,15 @@ class Sale(models.Model):
     sku = models.ForeignKey(Purchase,on_delete=models.PROTECT)
     quantity = models.BigIntegerField()
     discount = models.FloatField()
-    unit_price = models.DecimalField(max_digits=5, decimal_places=2)
-    total_amount = models.DecimalField(max_digits=5, decimal_places=2)
+    unit_price = models.DecimalField(max_digits=10, decimal_places=3)
+    total_amount = models.DecimalField(max_digits=10, decimal_places=3)
 
 class Customer(models.Model):
     firstname = models.CharField(max_length=255)
     lastname = models.CharField(max_length=255)
     phonenumber = models.CharField(max_length=10)
     discount = models.FloatField()
-    creditlimit = models.DecimalField(max_digits=8, decimal_places=1)
+    creditlimit = models.DecimalField(max_digits=10, decimal_places=3)
     tinnumber = models.BigIntegerField()
     vrnnumber = models.BigIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)

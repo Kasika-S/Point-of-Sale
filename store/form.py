@@ -1,4 +1,4 @@
-from django.forms import ModelForm 
+    7         widgets = { 
 from django.contrib.auth.hashers import make_password
 from django.core.validators import RegexValidator
 from django import forms

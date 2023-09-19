@@ -5,15 +5,19 @@ from store.form import InventoryForm
 
 class InventoryBoard(View):
     template_name = 'inventory.html'
+    contexts = {}
     def get(self, request):
-        return render(request, 'inventory.html', {'inventory': Inventory.objects.all()})
+        self.contexts['inventory'] = Inventory.objects.all()
+        return render(request, 'inventory.html', {**self.contexts})
 
     def post(self,request):
-        inventory_form = InventoryForm(request.POST)
-        if(inventory_form.is_valid()):
+        self.contexts['inventory_form'] = InventoryForm(request.POST)
+        if(self.contexts['inventory_form'].is_valid()):
             inventory_form.save()
             return redirect('inventory')
-        return render(request, self.template_name, {'inventory_form': inventory_form})
+        else:
+            print(self.contexts['inventory_form'].errors)
+        return render(request, self.template_name, {**self.contexts})
 
 
 

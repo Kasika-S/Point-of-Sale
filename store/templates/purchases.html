@@ -7,7 +7,7 @@
     <div class="form-container">
     <fieldset style='border: 2px solid black; border-radius: .5rem;padding: 1rem'>
     <legend>Purchase</legend>
-        <form method="POST" action='{% url "purchases" %}'>
+        <form method="POST" action='{% url "create_purchase" %}'>
             {% csrf_token %}
             <div class="form-section">
                <label>Purchase Order (MM/DD/#):</label>
@@ -52,11 +52,10 @@
             </div>
             </form>
             </fieldset>
-            {% if purchase_form.is_bound %}
             <fieldset style='border: 2px solid black; border-radius: .5rem;padding: 1rem'>
                 <legend>Inventory</legend>
 
-                <form action='{% url "purchases" %}' method='POST'>
+                <form action='{% url "create_inventory" %}' method='POST'>
                 {% csrf_token %}
                     <div class='form-section'>
                         {{ inventory_form.sku.label_tag}}
@@ -94,7 +93,6 @@
                     </div>
                 </form>
             </fieldset>
-         {% endif %}
     </div>
 </body>
 </html>
