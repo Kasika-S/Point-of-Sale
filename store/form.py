@@ -1,5 +1,6 @@
 from django.forms import ModelForm 
 from django.contrib.auth.hashers import make_password
+from django.core.validators import RegexValidator
 from django import forms
 from .models import *
 
@@ -43,7 +44,18 @@ class SaleForm(ModelForm):
 class CustomerForm(ModelForm):
     class Meta:
         model = Customer
-        fields = '__all__'
+        exclude = ['created_at']
+        widgets = {
+            'discount': forms.NumberInput(attrs={'id': 'discount', 'step': '.01'}),
+            'phonenumber': forms.TextInput(attrs={'id': 'phonenumber', 'maxlength': '20'}),
+            'creditlimit': forms.NumberInput(attrs={'id': 'creditlimit', 'step': '.01'}),
+        }
+        validators = [
+            RegexValidator(
+                regex=r'^\+255\d{20}$',
+                message = "Enter a valid Tanzanian phone number (e.g., +255XXXXXXXXX where X is a digit)."
+            )
+        ]
 
 class UserForm(ModelForm):
     class Meta:

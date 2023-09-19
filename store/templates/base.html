@@ -93,6 +93,15 @@
             })
         }
     });
+    document.querySelector('#phonenumber').addEventListener('input', function () {
+    var phoneNumber = this.value;
+    var regex = /^\+255\d{10}$/;
+    if (!regex.test(phoneNumber)) {
+        this.setCustomValidity('Enter a valid Tanzanian phone number (e.g., +255XXXXXXXXX where X is a digit).');
+    } else {
+        this.setCustomValidity('');
+    }
+});
 </script>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script src="js/scripts.js"></script>

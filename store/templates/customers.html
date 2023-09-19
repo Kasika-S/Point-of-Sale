@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} 
 {% block navigation %}
     {% include 'nav.html' %}
 {% endblock %}
@@ -15,29 +15,29 @@
     </span>
     <hr class="my-6">
 
-    <form action="" class="f mt-2" method='post'>
+    <form action="{% url 'create_customer' %}" class="f mt-2" method='post'>
             {% csrf_token %}
-            <label for='firstname'>First Name </label>
-            <input class="p-3 flex-2 mb-2" type="text" name='firstname' placeholder="First Name" id='firstname'>
+            {{ form.firstname.label_tag}}
+            {{ form.firstname }}
             <br>
-
-            <label for='lastname'>Last Name </label>
-            <input class="p-3 flex-2 mb-2" type="text" name='lastname' placeholder="Last Name" id='lastname'>
+            {{ form.lastname.label_tag }}
+            {{ form.lastname }}
             <br>
-            <label for='phone'>Phone number </label>
-            <input class="p-3 flex-2 mb-2" type="tel" name='phone' placeholder="Phone Number" id='+255 (674)(234567)'>
+            {{ form.phonenumber.label_tag }}
+            {{ form.phonenumber }}
             <br>
-            <label> for='discount'>Discount </label>
-            <input class="p-3 flex-2 mb-2" type="number" step='.01' name='discount' placeholder="0.04" id='discount'>
-
-            <label for='Credit Limit'>Credit Limit </label>
-            <input class="p-3 flex-2 mb-2" type="number" name='CreditLimit' placeholder="Credit Limit" id='1,000,000'>
+            {{ form.discount.label_tag }}
+            {{ form.discount }}
             <br>
-            <label for='TinNumber'>TIN Number </label>
-            <input class="p-3 flex-2 mb-2" type="number" name='TinNumber' placeholder="TIN Number" id='123-456-789'>
+            {{ form.creditlimit.label_tag }}
+            {{ form.creditlimit }}
             <br>
-            <label for='VRNNumber'>VRN Number </label>
-            <input class="p-3 flex-2 mb-2" type="number" name='VrnNumber' placeholder="VRN Number" id='VrnNumber'>
+            {{ form.tinnumber.label_tag }}
+            {{ form.tinnumber }}
+            <br>
+            {{ form.vrnnumber.label_tag }}
+            {{ form.vrnnumber }}
+            <br>
             <br>
             <input type='submit' name='create' value='Create' class='btn-bs-primary uppercase tracking-wider' style='width:100%'>
 
@@ -74,7 +74,7 @@
 
         <!-- table body -->
         <tbody class="text-left text-gray-600">
-        {% for user in users %}
+        {% for user in customers %}
             <!-- item -->
             <tr>
                 <!-- name -->
@@ -87,7 +87,7 @@
                 <!-- name -->
 
                 <!-- PhoneNumber -->
-                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left">{{ user.PhoneNumber }}</th>
+                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left">{{ user.phonenumber }}</th>
                 <!-- PhoneNumber -->
 
                 <!-- update -->

@@ -1,4 +1,4 @@
-from django.db import models 
+from django.db import models
 from django.utils import timezone
 import uuid
 
@@ -90,7 +90,7 @@ class Customer(models.Model):
     lastname = models.CharField(max_length=255)
     phonenumber = models.CharField(max_length=10)
     discount = models.FloatField()
-    creditlimit = models.DecimalField(max_digits=5, decimal_places=1)
+    creditlimit = models.DecimalField(max_digits=8, decimal_places=1)
     tinnumber = models.BigIntegerField()
     vrnnumber = models.BigIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
