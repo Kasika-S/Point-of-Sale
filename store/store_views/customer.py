@@ -16,5 +16,5 @@ class CustomerBoard(View):
             return redirect('customers')
         else:
             print(self.contexts['form'].errors)
-        return render(request, 'customers.html', {**self.contexts })
+        return render(request, 'customers.html',{**self.contexts })
 

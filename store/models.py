@@ -70,13 +70,15 @@ class Purchase(models.Model):
         inventory.stock_available_main = stock_available_main
         inventory.stock_available_for_sale = stock_available_for_sale
         inventory.stock_available_value = stock_available_value
+        if(inventory.total_sales > 1000):
+            inventory.best_selling_product = True
         inventory.save()
 
     def __str__(self):
         return self.sku
 
 class Inventory(models.Model):
-    sku = models.ForeignKey(Purchase,on_delete=models.CASCADE)
+    sku = models.ForeignKey(Purchase,on_delete=models.CASCADE, related_name='inventory')
     reorder_point = models.BigIntegerField(default=50)
     total_purchases = models.DecimalField(max_digits=10,decimal_places=3, default=0.0)
     total_sales = models.DecimalField(max_digits=10,decimal_places=3,default=0.0)

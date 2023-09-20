@@ -1,22 +1,21 @@
-{% extends 'base.html' %}
+   72         </tbody> 
 {% block navigation %}
     {% include 'nav.html' %}
 {% endblock %}
 {% block content %}
 {% load static %}
   <!-- strat content -->
-  <div class="bg-gray-100 flex-1 p-6 md:mt-16 grid grid-cols-8">
-
-    <div class="col-span-12 bg-white border rounded p-6 mr-8">
-
-    <a href="#" class="btn-bs-dark uppercase tracking-wider">
-        <i class="fad fa-layer-plus mr-2"></i>
-        Known Operations: TODO
-    </a>
-    <hr class="my-6">
+  <style>
 
 
-    </div>
+th, td {
+  border: 1px solid grey; /* Add borders to cells */
+  text-align: left;
+}
+
+
+</style>
+  <div class="bg-gray-100 flex-1 p-1 md:mt-10 grid grid-cols-8">
     <div class="col-span-12 p-4 mt-2 card flex flex-col">
 
     <div class="px-3 border-b">
@@ -29,56 +28,130 @@
     </div>
 
     <div class="flex-1 flex flex-col">
-         <!-- start a table -->
-    <table class="table-fixed P-5 m-5">
+   <!-- start a table -->
+    <table class="table-fixed w-full mt-5 border p-1">
 
         <!-- table head -->
-        <thead class="text-left">
-            <tr>
-                <th class="w-1/2 pb-10 text-sm font-extrabold tracking-wide">Fullname</th>
-                <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-center">mail</th>
-                <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-left">update</th>
-                <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-left">delete</th>
-<!--                 <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-right">status</th> -->
+        <thead class="text-center  text-gray-900 uppercase dark:text-gray-900 bg-primary">
+            <tr class='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>Purchase order</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>sku</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>Item Name</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>supplier</th>
+               <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>category</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>uom</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>quantity</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight '>UP</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>total(P)</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>ED</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>RO</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>TP</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>TS</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>SAM</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>SAS</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>SAV</th>
+                <th class='w-fit pb-10 text-xs font-semibold tracking-tight'>BSB</th>
             </tr>
         </thead>
         <!-- end table head -->
 
         <!-- table body -->
-        <tbody class="text-left text-gray-600">
-        {% for user in users %}
+        {% for inventory in inventory_data %}
+        <tbody class=" text-gray-700">
+
             <!-- item -->
-            <tr>
-                <!-- name -->
-                <th class="w-1/2 mb-4 text-xs font-extrabold tracking-wider flex flex-row items-center w-full">
-                    <div class="w-8 h-8 overflow-hidden rounded-full">
-                        <img src="img/user2.jpg" class="object-cover">
-                    </div>
-                    <p class="ml-3 name-1">{{ user.firstname}} {{user.lastname }}</p>
+            <tr class=''>
+
+                <th class="w-fit mb-auto text-xs font-semibold tracking-tight text-center">
+                    {{ inventory.purchase_order }}
                 </th>
-                <!-- name -->
 
-                <!-- mail -->
-                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left">{{ user.mail }}</th>
-                <!-- mail -->
+                <!-- product -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory.sku }}</th>
+                <!-- product -->
 
-                <!-- update -->
-                <th class="w-1/4 mb-4 text-xs font-extrabold tracking-wider text-left"><span class="num-2 btn btn-success">update</span></th>
-                <!-- update -->
+                <!-- invoice -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory.item_name }}</th>
+                <!-- invoice -->
 
-                <!-- delete -->
-                <th class="w-1/4 mb-4 text-xs font-extrabold tracking-wider text-left"><span class="num-2 btn btn-danger">Delete</span></th>
-                <!-- delete -->
+                <!-- price -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory.supplier }}</th>
+                <!-- price -->
 
+                <!-- status -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory.category }}</th>
+                <!-- status -->
+                <!-- status -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory.uom }}</th>
+                <!-- status -->
+                <!-- status -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory.quantity }}</th>
+                <!-- status -->
+                <!-- status -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">Tsh.<span class="num-2">{{ inventory.unit_price|floatformat:2 }}</span></th>
+                <!-- status -->
+                <!-- status -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">Tsh.<span class="num-2">{{ inventory.total|floatformat:2 }}</span></th>
+                <!-- status -->
+                <!-- status -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory.expire_date }}</th>
+                <!-- status -->
+                <!-- status -->
+                {% for inventory_data in inventory.inventory.all %}
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory_data.reorder_point }}</th>
+                <!-- status -->
+                <!-- status -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory_data.total_purchases|floatformat:0 }}</th>
+                <!-- status -->
+                <!-- status -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory_data.total_sales|floatformat:0 }}</th>
+                <!-- status -->
+                <!-- status -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory_data.stock_available_main }}</th>
+                <!-- status -->
+                <!-- status -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory_data.stock_available_for_sale }}</th>
+                <!-- status -->
+                <!-- status -->
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory_data.stock_available_value }}</th>
+                <!-- status -->
+                <!-- status -->
+                {% if inventory_data.best_selling_product == False %}
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">Not yet</th>
+                {% else %}
+                <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">{{ inventory_data.best_selling_product }}</th>
+                {% endif %}
+                <!-- status -->
+                {% endfor %}
             </tr>
-            {% endfor %}
+            <!-- item -->
+
+<!--                 <th class="w-1/4 mb-4 text-xs font-semibold tracking-tight text-center">$<span class="num-2">{{ inventory.category }}</span></th> -->
+
+
         </tbody>
+        {% endfor %}
         <!-- end table body -->
 
-    </table>
-    <!-- end a table -->
-    </div>
+    </table>    <!-- Pagination navigation -->
 
+    <div class="pagination">
+  <span class="step-links">
+    {% if inventory_data.has_previous %}
+      <a href="?page=1">&laquo; First</a>
+      <a href="?page={{ inventory_data.previous_page_number }}">Previous</a>
+    {% endif %}
+
+    <span class="current">
+      Page {{ inventory_data.number }} of {{ inventory_data.paginator.num_pages }}.
+    </span>
+
+    {% if page_obj.has_next %}
+      <a href="?page={{ inventory_data.next_page_number }}">Next</a>
+      <a href="?page={{ inventory_data.paginator.num_pages }}">Last &raquo;</a>
+    {% endif %}
+  </span>
+</div>
     <div class="card-footer flex justify-between">
         <p>4.41 GB (25%) of 17 GB used Manage</p>
         <p>Last account activity: 36 minutes ago</p>
@@ -87,7 +160,6 @@
 
   </div>
   <!-- end content -->
-
 </div>
 <!-- end wrapper -->
 
