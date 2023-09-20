@@ -56,6 +56,22 @@ class Purchase(models.Model):
     total = models.DecimalField(max_digits=10, decimal_places=3)
     expire_date = models.DateField()
 
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        total_purchase = self.quantity
+        stock_available_main = self.quantity
+        stock_available_for_sale = self.quantity
+        stock_available_value = self.quantity * self.unit_price
+
+        # inventory 
+        inventory, created = Inventory.objects.get_or_create(sku=self)
+        inventory.reorder_point = 5
+        inventory.total_purchases = total_purchase
+        inventory.stock_available_main = stock_available_main
+        inventory.stock_available_for_sale = stock_available_for_sale
+        inventory.stock_available_value = stock_available_value
+        inventory.save()
+
     def __str__(self):
         return self.sku
 

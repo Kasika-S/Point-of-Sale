@@ -16,7 +16,7 @@ class PurchaseBoard(View):
 
         if(self.contexts['purchase_form'].is_valid()):
             self.contexts['purchase_form'].save()
-            return redirect('Inventory')
+            return redirect('inventory')
 
         else:
             print(self.contexts['purchase_form'].errors)
