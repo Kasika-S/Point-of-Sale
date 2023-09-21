@@ -14,7 +14,7 @@
         New Sale
     </a>
     <hr class="my-6">
-    <form action="{% url 'sales' %}" class="f mt-2">
+    <form action="{% url 'create_sale' %}" method='POST' class="f mt-2">
             {% csrf_token %}
             {{ sale_form.sale_order.label_tag }}
             {{ sale_form.sale_order }}
@@ -59,11 +59,12 @@
         <!-- table head -->
         <thead class="text-left">
             <tr>
-                <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide">Product Name</th>
-                <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide">SKU</th>
-                <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-center">Sale date</th>
-                <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-left">update</th>
-                <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-left">delete</th>
+                <th class="w-1/8 pb-10 text-sm font-extrabold tracking-wide">Sale Date</th>
+                <th class="w-1/8 pb-10 text-sm font-extrabold tracking-wide">SKU</th>
+                <th class="w-1/8 pb-10 text-sm font-extrabold tracking-wide text-center">Quantity</th>
+                <th class="w-1/8 pb-10 text-sm font-extrabold tracking-wide text-left">Discount</th>
+                <th class="w-1/8 pb-10 text-sm font-extrabold tracking-wide text-left">UP</th>
+                <th class="w-1/8 pb-10 text-sm font-extrabold tracking-wide text-left">Total</th>
 <!--                 <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-right">status</th> -->
             </tr>
         </thead>
@@ -71,28 +72,28 @@
 
         <!-- table body -->
         <tbody class="text-left text-gray-600">
-        {% for user in users %}
+        {% for sale in sale_data %}
             <!-- item -->
             <tr>
                 <!-- name -->
                 <th class="w-1/2 mb-4 text-xs font-extrabold tracking-wider flex flex-row items-center w-full">
-                    <div class="w-8 h-8 overflow-hidden rounded-full">
-                        <img src="img/user2.jpg" class="object-cover">
-                    </div>
-                    <p class="ml-3 name-1">{{ user.firstname}} {{user.lastname }}</p>
+                  {{ sale.sale_date }}
+                </th>
+                <th class="w-1/2 mb-4 text-xs font-extrabold tracking-wider flex flex-row items-center w-full">
+                  {{ sale.sale_order }}
                 </th>
                 <!-- name -->
 
                 <!-- mail -->
-                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left">{{ user.mail }}</th>
+                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left"> {{ sale.sku }}</th>
                 <!-- mail -->
 
                 <!-- update -->
-                <th class="w-1/4 mb-4 text-xs font-extrabold tracking-wider text-left"><span class="num-2 btn btn-success">update</span></th>
+                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left"> {{ sale.unit_price }}</th>
                 <!-- update -->
-
+                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left"> {{ sale.quantity }}</th>
                 <!-- delete -->
-                <th class="w-1/4 mb-4 text-xs font-extrabold tracking-wider text-left"><span class="num-2 btn btn-danger">Delete</span></th>
+                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left"> {{ sale.total_amount }}</th>
                 <!-- delete -->
 
             </tr>

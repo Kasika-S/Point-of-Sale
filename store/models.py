@@ -42,7 +42,7 @@ class Purchase(models.Model):
         ('other', 'Other'),
     ]
     sku = models.CharField(max_length=255, primary_key=True)
-    purchase_order = models.CharField(max_length=100)
+    purchase_order = models.CharField(max_length=100, unique=True)
     purchase_date = models.DateField(auto_now_add=True) # Default
     item_name = models.CharField(max_length=255)
     item_description = models.CharField(max_length=255)
@@ -63,13 +63,15 @@ class Purchase(models.Model):
         stock_available_for_sale = self.quantity
         stock_available_value = self.quantity * self.unit_price
 
-        # inventory 
+        # inventory
         inventory, created = Inventory.objects.get_or_create(sku=self)
         inventory.reorder_point = 5
         inventory.total_purchases = total_purchase
-        inventory.stock_available_main = stock_available_main
-        inventory.stock_available_for_sale = stock_available_for_sale
-        inventory.stock_available_value = stock_available_value
+        inventory.stock_available_main += stock_available_main
+        inventory.stock_available_for_sale += inventory.stock_available_main 
+        inventory.stock_available_value = inventory.stock_available_main * self.unit_price
+
+
         if(inventory.total_sales > 1000):
             inventory.best_selling_product = True
         inventory.save()
@@ -92,7 +94,6 @@ class Reserved(models.Model):
     sku = models.ForeignKey(Purchase,on_delete=models.CASCADE)
     quantity = models.BigIntegerField()
 
-
 class Sale(models.Model):
     sale_order = models.CharField(max_length=100,primary_key=True)
     sale_date = models.DateField(auto_now_add=True)
@@ -101,6 +102,21 @@ class Sale(models.Model):
     discount = models.FloatField()
     unit_price = models.DecimalField(max_digits=10, decimal_places=3)
     total_amount = models.DecimalField(max_digits=10, decimal_places=3)
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        total_sale = self.quantity
+        stock_available_main = self.quantity
+
+        # Inventory
+        inventory, created = Inventory.objects.get_or_create(sku=self.sku)
+        inventory.total_sales += total_sale
+        inventory.stock_available_main -= stock_available_main
+        inventory.stock_available_for_sale = inventory.stock_available_main
+        inventory.save()
+
+    def __str__(self):
+        return self.sale_order
 
 class Customer(models.Model):
     firstname = models.CharField(max_length=255)

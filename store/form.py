@@ -31,7 +31,7 @@ class SaleForm(ModelForm):
             'quantity': forms.NumberInput(attrs={'id': 'quantity'}),
             'discount': forms.NumberInput(attrs={'id': 'discount', 'step': '.01'}),
             'unit_price': forms.NumberInput(attrs={'id': 'unit_price', 'step': '.01'}),
-            'total_amount': forms.NumberInput(attrs={'id': 'total_amount', 'step': '.01'}),
+            'total_amount': forms.NumberInput(attrs={'id': 'total', 'step': '.01'}),
         }
 
 class CustomerForm(ModelForm):

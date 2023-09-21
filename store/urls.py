@@ -14,6 +14,7 @@ urlpatterns = [
     path('inventory/', inventory.InventoryBoard.as_view(), name='inventory'),
     path('inventory/create', inventory.InventoryBoard.as_view(), name='create_inventory'),
     path('sales/', sales.SaleBoard.as_view(), name='sales'),
+    path('sales/create/', sales.SaleBoard.as_view(), name='create_sale'),
     path('purchases/', purchase.PurchaseBoard.as_view(), name='purchases'),
     path('purchases/create/', purchase.PurchaseBoard.as_view(), name='create_purchase'),
     path('users/', user.UserBoard.as_view(), name='users'),
