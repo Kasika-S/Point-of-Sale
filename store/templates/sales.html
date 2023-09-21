@@ -59,13 +59,14 @@
         <!-- table head -->
         <thead class="text-left">
             <tr>
-                <th class="w-1/8 pb-10 text-sm font-extrabold tracking-wide">Sale Date</th>
-                <th class="w-1/8 pb-10 text-sm font-extrabold tracking-wide">SKU</th>
-                <th class="w-1/8 pb-10 text-sm font-extrabold tracking-wide text-center">Quantity</th>
-                <th class="w-1/8 pb-10 text-sm font-extrabold tracking-wide text-left">Discount</th>
-                <th class="w-1/8 pb-10 text-sm font-extrabold tracking-wide text-left">UP</th>
-                <th class="w-1/8 pb-10 text-sm font-extrabold tracking-wide text-left">Total</th>
-<!--                 <th class="w-1/4 pb-10 text-sm font-extrabold tracking-wide text-right">status</th> -->
+                <th class="w-1/8 pb-10 text-sm font-semibold tracking-wide">Sale Date</th>
+                <th class="w-1/8 pb-10 text-sm font-semibold tracking-wide">Sale Order</th>
+                <th class="w-1/8 pb-10 text-sm font-semibold tracking-wide">SKU</th>
+                <th class="w-1/8 pb-10 text-sm font-semibold tracking-wide text-center">UP</th>
+                <th class="w-1/8 pb-10 text-sm font-semibold tracking-wide text-center">Quantity</th>
+                <th class="w-1/8 pb-10 text-sm font-semibold tracking-wide text-center">Discount</th>
+                <th class="w-1/8 pb-10 text-sm font-semibold tracking-wide text-center">Total</th>
+<!--                 <th class="w-1/4 pb-10 text-sm font-semibold tracking-wide text-right">status</th> -->
             </tr>
         </thead>
         <!-- end table head -->
@@ -76,24 +77,19 @@
             <!-- item -->
             <tr>
                 <!-- name -->
-                <th class="w-1/2 mb-4 text-xs font-extrabold tracking-wider flex flex-row items-center w-full">
-                  {{ sale.sale_date }}
-                </th>
-                <th class="w-1/2 mb-4 text-xs font-extrabold tracking-wider flex flex-row items-center w-full">
-                  {{ sale.sale_order }}
-                </th>
+               <th class="w-1/8 mb-4 text-xs font-semibold tracking-wider text-left"> {{ sale.sale_date }}</th>
                 <!-- name -->
-
+                 <th class="w-1/8 mb-4 text-xs font-semibold tracking-wider text-left"> {{ sale.sale_order }}</th>
                 <!-- mail -->
-                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left"> {{ sale.sku }}</th>
+                <th class="w-1/8 mb-4 text-xs font-semibold tracking-wider text-left"> {{ sale.sku }}</th>
                 <!-- mail -->
 
                 <!-- update -->
-                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left"> {{ sale.unit_price }}</th>
+                <th class="w-1/8 mb-4 text-xs font-semibold tracking-wider text-left"> {{ sale.unit_price }}</th>
                 <!-- update -->
-                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left"> {{ sale.quantity }}</th>
+                <th class="w-1/8 mb-4 text-xs font-semibold tracking-wider text-left"> {{ sale.quantity }}</th>
                 <!-- delete -->
-                <th class="w-1/6 mb-4 text-xs font-extrabold tracking-wider text-left"> {{ sale.total_amount }}</th>
+                <th class="w-1/8 mb-4 text-xs font-semibold tracking-wider text-left"> {{ sale.total_amount }}</th>
                 <!-- delete -->
 
             </tr>
