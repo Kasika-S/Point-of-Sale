@@ -97,7 +97,7 @@ class Reserved(models.Model):
 class Sale(models.Model):
     sale_order = models.CharField(max_length=100,primary_key=True)
     sale_date = models.DateField(auto_now_add=True)
-    sku = models.ForeignKey(Purchase,on_delete=models.PROTECT)
+    sku = models.ForeignKey(Purchase,on_delete=models.PROTECT,related_name='sales')
     quantity = models.BigIntegerField()
     discount = models.FloatField()
     unit_price = models.DecimalField(max_digits=10, decimal_places=3)
